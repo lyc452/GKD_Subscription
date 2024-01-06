@@ -5,14 +5,18 @@ export default defineAppConfig({
   name: '秀动',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds:
-        'com.showstartfans.activity.activitys.welcome.AdvertActivity',
-      matchLauncher: true,
-      quickFind: true,
-      rules: '[id="com.showstartfans.activity:id/txt_jump"]',
-      snapshotUrls: 'https://i.gkd.li/import/12894279',
+      key: 1,
+      name: '弹窗广告',
+      rules: [
+        {
+          key: 0,
+          activityIds:
+            'com.showstartfans.activity.activitys.maintab.newmain.MainNewActivity',
+          quickFind: true,
+          matches: '[id="com.showstartfans.activity:id/img_close_coupon"]',
+          snapshotUrls: 'https://i.gkd.li/import/13670432',
+        },
+      ],
     },
   ],
 });

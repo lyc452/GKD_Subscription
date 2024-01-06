@@ -5,20 +5,6 @@ export default defineAppConfig({
   name: '米游社',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      activityIds: [
-        'com.mihoyo.hyperion.ui.SplashActivity',
-        'com.mihoyo.hyperion.splash.SplashActivity',
-        'com.miui.home.launcher.Launcher',
-      ],
-      rules: '[id="com.mihoyo.hyperion:id/mSplashBtJump"]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12482738',
-        'https://i.gkd.li/import/12675530', // activityId: 'com.miui.home.launcher.Launcher'
-      ],
-    },
-    {
       key: 1,
       name: '青少年模式',
       desc: '关闭青少年模式提醒弹窗',
@@ -43,13 +29,13 @@ export default defineAppConfig({
     {
       key: 3,
       name: '自动打卡',
-      desc: '点击顶部搜索框右侧[打卡],切换板块自动签到',
+      desc: '点击[打卡],切换板块自动签到',
       activityIds: 'com.mihoyo.hyperion.main.HyperionMainActivity',
       rules:
-        'TextView[id="com.mihoyo.hyperion:id/mTvText"][text="打卡"][visibleToUser=true]',
+        'TextView[id="com.mihoyo.hyperion:id/signTv"][text="打卡"][visibleToUser=true]',
       snapshotUrls: [
-        'https://i.gkd.li/import/12857503', // 未打卡
-        'https://i.gkd.li/import/12859518', // 已打卡
+        'https://i.gkd.li/import/13721772', // 未打卡
+        'https://i.gkd.li/import/13721776', // 已打卡
       ],
     },
   ],

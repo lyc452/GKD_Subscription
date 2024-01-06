@@ -44,5 +44,20 @@ export default defineAppConfig({
       rules: 'View[childCount=9] > @Image -2 View[childCount=5]',
       snapshotUrls: 'https://i.gkd.li/import/13596924',
     },
+    {
+      key: 3,
+      name: '版本更新',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      quickFind: true,
+      activityIds: 'com.alicloud.databox.MainActivity',
+      rules: [
+        {
+          matches: '[text^="立即了解"] -3 View[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/13806865',
+        },
+      ],
+    },
   ],
 });
