@@ -113,7 +113,7 @@ type RawCommonProps = {
    *
    * 比如开屏广告可能需要多个 rule 去匹配, 当一个 rule 触发时, 其它 rule 的触发是无意义的
    *
-   * 如果你对这个 key 的 rule 设置 actionMaximum=0, 那么当这个 rule 和 本 rule 触发任意一个时, 两个 rule 都将进入休眠
+   * 如果你对这个 key 的 rule 设置 actionMaximum=1, 那么当这个 rule 和 本 rule 触发任意一个时, 两个 rule 都将进入休眠
    */
   actionMaximumKey?: number;
 
@@ -269,6 +269,16 @@ type RawGlobalRuleProps = {
    * false => 仅匹配 apps 里面的 app
    */
   matchAnyApp?: boolean;
+
+  /**
+   * 默认值: `false`
+   *
+   * 是否匹配桌面, 仅全局规则可用
+   *
+   * 如果你切换了桌面, 你需要打开 GKD 的界面触发识别新桌面
+   */
+  matchLauncher?: boolean;
+
   apps?: RawGlobalApp[];
 };
 

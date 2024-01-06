@@ -20,6 +20,7 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12700486)
+- [快照-1](https://i.gkd.li/import/13799951)
 
 ## 卡片式广告
 
