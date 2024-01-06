@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.chaozh.iReader',
   name: 'VIVO 电子书',
+  deprecatedKeys: [0],
   groups: [
     {
       key: 1,

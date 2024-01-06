@@ -1,10 +1,6 @@
 # 番茄免费小说
 
-存在 9 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13210844)
+存在 8 规则组 - [com.dragon.read](/src/apps/com.dragon.read.ts)
 
 ## 卡片式广告
 
@@ -47,6 +43,8 @@
 
 - [快照-0](https://i.gkd.li/import/13520160)
 - [快照-1](https://i.gkd.li/import/13520219)
+- [快照-2](https://i.gkd.li/import/13674550)
+- [快照-3](https://i.gkd.li/import/13674556)
 
 ## 请求通知权限弹窗
 

@@ -1,11 +1,6 @@
 # 微博
 
-存在 17 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
-
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/12782355)
-- [快照-1](https://i.gkd.li/import/13194049)
+存在 15 规则组 - [com.sina.weibo](/src/apps/com.sina.weibo.ts)
 
 ## 兴趣领域推荐
 
@@ -27,6 +22,7 @@
 - [快照-0](https://i.gkd.li/import/12673043)
 - [快照-1](https://i.gkd.li/import/13635551)
 - [快照-2](https://i.gkd.li/import/12673051)
+- [快照-3](https://i.gkd.li/import/13787207)
 
 ## 评论区博主内容推荐
 
@@ -43,11 +39,13 @@
 
 - [快照-0](https://i.gkd.li/import/12705972)
 
-## 发现页广告弹窗
+## 弹窗广告
 
 默认禁用
 
-- [快照-0](https://i.gkd.li/import/12705974)
+- [快照-0](https://i.gkd.li/import/12750090)
+- [快照-1](https://i.gkd.li/import/13670266)
+- [快照-2](https://i.gkd.li/import/12705974)
 
 ## 请求开启通知弹窗
 
@@ -66,12 +64,6 @@
 默认禁用 - 自动点击x按钮
 
 - [快照-0](https://i.gkd.li/import/12749876)
-
-## 首页广告弹窗
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/import/12750090)
 
 ## 悬浮广告
 

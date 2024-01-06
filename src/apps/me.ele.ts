@@ -6,15 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [3],
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[id="me.ele:id/skip_button"]',
-      snapshotUrls: 'https://i.gkd.li/import/12534930',
-    },
-    {
       key: 1,
       name: '版本更新',
       quickFind: true,
@@ -45,13 +36,14 @@ export default defineAppConfig({
             'me.ele.shopdetailv2.ShopDetailV2Activity',
           ],
           matches:
-            '@ImageView[clickable=true] - ViewGroup < [id="me.ele:id/id_magex_mistview"][childCount=2]',
+            '[id="me.ele:id/id_magex_mistview"] >n ViewGroup + ImageView',
           snapshotUrls: [
             'https://i.gkd.li/import/12650238',
             'https://i.gkd.li/import/13294893',
             'https://i.gkd.li/import/13331361',
             'https://i.gkd.li/import/13362974',
             'https://i.gkd.li/import/13376008',
+            'https://i.gkd.li/import/13710581',
           ],
         },
         {
@@ -74,6 +66,7 @@ export default defineAppConfig({
             'me.ele.component.pops2.Pops2MistDialog',
             'me.ele.newbooking.checkout.entrypoint.WMCheckoutActivity',
             'me.ele.application.ui.Launcher.LauncherActivity',
+            'me.ele.android.emagex.container.EMagexActivity',
           ],
           matches:
             '@ImageView[clickable=true] - ImageView < [id="me.ele:id/id_magex_mistview"][childCount=2]',
@@ -81,19 +74,26 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12726709',
             'https://i.gkd.li/import/13476719',
             'https://i.gkd.li/import/13523508',
+            'https://i.gkd.li/import/13685037',
           ],
         },
         {
           key: 2,
-          activityIds: [
-            'me.ele.application.ui.Launcher.LauncherActivity',
-            'me.ele.application.ui.Launcher.LauncherActivity',
-          ],
+          activityIds: ['me.ele.application.ui.Launcher.LauncherActivity'],
           matches:
             '[id="me.ele:id/fl_render_e_shop"] + FrameLayout >n ViewGroup[childCount=6] > View[index=5]',
           snapshotUrls: [
             'https://i.gkd.li/import/13476611',
             'https://i.gkd.li/import/13523541',
+          ],
+        },
+        {
+          key: 3,
+          activityIds: ['me.ele.application.ui.Launcher.LauncherActivity'],
+          matches: 'ViewGroup[clickable=true] - TextView[text="放弃"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13710574',
+            'https://i.gkd.li/import/13710591',
           ],
         },
       ],
@@ -113,6 +113,35 @@ export default defineAppConfig({
       activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
       rules: '@View + View >2 [text="买校园版超级吃货卡"]',
       snapshotUrls: 'https://i.gkd.li/import/13295007',
+    },
+    {
+      key: 7,
+      name: '首页-底部浮窗广告',
+      activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+      rules:
+        'LinearLayout >n FrameLayout >n ViewGroup[childCount=3] + ViewGroup[clickable=true]',
+      snapshotUrls: 'https://i.gkd.li/import/13710588',
+    },
+    {
+      key: 8,
+      name: '开启定位提醒',
+      desc: '自动点击X',
+      enable: false,
+      quickFind: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+          matches: '[text="去开启"] + [id="me.ele:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13710588',
+        },
+        {
+          key: 1,
+          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+          matches: '[text="去开启"] + [id="me.ele:id/close_tips"]',
+          snapshotUrls: 'https://i.gkd.li/import/13710585',
+        },
+      ],
     },
   ],
 });

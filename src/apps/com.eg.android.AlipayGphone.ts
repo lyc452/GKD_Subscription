@@ -8,11 +8,13 @@ export default defineAppConfig({
       enable: false,
       key: 0,
       name: '关闭花呗升级弹窗',
+      actionMaximum: 1,
+      resetMatch: 'app',
       activityIds: [
         'com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main',
         'com.alipay.android.msp.ui.views', //views.MspContainerActivity & views.MspUniRenderActivity
+        'com.alipay.android.msp.ui.views.MspContainerActivity',
       ],
-      matchLauncher: true,
       rules: [
         {
           key: 0,
@@ -20,7 +22,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/import/12737055', //com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main
         },
         {
-          key: 1,
+          quickFind: true,
           matches: [
             '[text="根据相关法律法规要求，请尽快完成花呗升级"]',
             'FrameLayout > FrameLayout  > FrameLayout > [text="关闭"]',
@@ -28,8 +30,14 @@ export default defineAppConfig({
           snapshotUrls: [
             'https://i.gkd.li/import/13183946', //com.alipay.android.msp.ui.views.MspContainerActivity
             'https://i.gkd.li/import/12826077', //com.alipay.android.msp.ui.views.MspUniRenderActivity
-            'https://i.gkd.li/import/12915864', //matchLauncher
+            'https://i.gkd.li/import/12915864',
           ],
+        },
+        {
+          quickFind: true,
+          matches:
+            '[text="花呗服务未升级，将影响后续使用"] <<n FrameLayout @FrameLayout[clickable=true] [text="暂不升级，继续付款"]',
+          snapshotUrls: 'https://i.gkd.li/import/13631362',
         },
       ],
     },
@@ -46,15 +54,26 @@ export default defineAppConfig({
     {
       key: 2,
       name: '请求通知权限提示',
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
-      activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules: [
         {
           key: 0,
           name: '首页底部提示',
+          activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
           matches:
             '@[desc="关闭"] - * >n [id="com.alipay.mobile.antui:id/tipTextView"][text^="开启通知权限"]',
           snapshotUrls: 'https://i.gkd.li/import/13194955',
+        },
+        {
+          key: 1,
+          name: '消息页弹窗提示',
+          activityIds:
+            'com.alipay.mobile.rome.pushservice.integration.PushOpenGuideActivity',
+          matches:
+            '[text="选择通知接收范围"] <2 RelativeLayout [text="暂时不用"]',
+          snapshotUrls: 'https://i.gkd.li/import/13669620',
         },
       ],
     },
@@ -62,10 +81,13 @@ export default defineAppConfig({
       enable: false,
       key: 3,
       name: '版本更新',
+      actionMaximum: 1,
+      resetMatch: 'app',
       quickFind: true,
       activityIds: [
         'com.alipay.mobile.alipassapp.alkb.kb.ALPMainPage63',
         'com.eg.android.AlipayGphone.AlipayLogin',
+        'com.alipay.mobile.about.ui.AboutAlipayActivity',
       ],
       rules: [
         {
@@ -77,8 +99,11 @@ export default defineAppConfig({
         {
           name: '弹窗-【x】',
           matches:
-            '[text="版本更新"] - [id="com.alipay.mobile.antui:id/btn_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/13490805',
+            '[text="版本更新"||text^="Version"] - [id="com.alipay.mobile.antui:id/btn_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13490805',
+            'https://i.gkd.li/import/13580594',
+          ],
         },
         {
           name: '卡片-【x】',
@@ -101,6 +126,28 @@ export default defineAppConfig({
             '@TextView[text="关闭"] < * <3 * < * + * >3 TextView[text="设置支付宝小组件"]',
           action: 'clickCenter',
           snapshotUrls: 'https://i.gkd.li/import/13327349',
+        },
+      ],
+    },
+    {
+      key: 10,
+      name: '小程序-12306',
+      activityIds: 'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[desc="推荐广告"] > [desc="展开更多选项"][visibleToUser=true]',
+          action: 'clickCenter',
+          snapshotUrls: 'https://i.gkd.li/import/13763314',
+        },
+        {
+          preKeys: 0,
+          key: 1,
+          quickFind: true,
+          matches: '[text="对该内容不感兴趣"]',
+          action: 'clickCenter',
+          snapshotUrls: 'https://i.gkd.li/import/13763315',
         },
       ],
     },

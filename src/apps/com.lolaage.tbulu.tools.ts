@@ -5,19 +5,6 @@ export default defineAppConfig({
   name: '两步路户外助手',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      quickFind: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text*="跳过"][text.length<=10]',
-      snapshotUrls: [
-        'https://i.gkd.li/import/12882538',
-        'https://i.gkd.li/import/13627860',
-      ],
-    },
-    {
       key: 1,
       name: '更新弹窗',
       actionMaximum: 1,
@@ -35,8 +22,11 @@ export default defineAppConfig({
           name: '腾讯广告',
           activityIds: 'com.lolaage.tbulu.tools.ui.activity.WelcomeActivity',
           matches:
-            'ImageView -2 FrameLayout > FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/import/13627861',
+            'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13627861',
+            'https://i.gkd.li/import/13650732',
+          ],
         },
       ],
     },
