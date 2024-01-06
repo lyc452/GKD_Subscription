@@ -2,11 +2,6 @@
 
 存在 14 规则组 - [com.ss.android.ugc.aweme](/src/apps/com.ss.android.ugc.aweme.ts)
 
-## 开屏广告
-
-- [快照-0](https://i.gkd.li/import/13460370)
-- [快照-1](https://i.gkd.li/import/13216121)
-
 ## 关闭青少年弹窗
 
 默认禁用
@@ -66,6 +61,7 @@
 默认禁用 - 自动点击“暂不”
 
 - [快照-0](https://i.gkd.li/import/12675129)
+- [快照-1](https://i.gkd.li/import/13669790)
 
 ## 自动勾选原图
 
@@ -82,14 +78,21 @@
 - [快照-1](https://i.gkd.li/import/13372604)
 - [快照-2](https://i.gkd.li/import/13372725)
 
-## 添加搜索到桌面弹窗
+## 添加快捷方式到桌面
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13338556)
+- [快照-1](https://i.gkd.li/import/13669682)
 
 ## 视频播放中途插入的打招呼界面
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/13379307)
+
+## 关闭商城推荐
+
+默认禁用 - 点击【不感兴趣】
+
+- [快照-0](https://i.gkd.li/import/13800207)
