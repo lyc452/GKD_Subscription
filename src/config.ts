@@ -4,8 +4,8 @@ import apps from './rawApps';
 import type { RawSubscription } from './types';
 
 const subsConfig: RawSubscription = {
-  id: 0,
-  version: 0,
+  id: 1,
+  version: 1,
   name: 'GKD订阅',
   author: 'lyc452',
   supportUri: 'https://github.com/lyc452/subscription',
