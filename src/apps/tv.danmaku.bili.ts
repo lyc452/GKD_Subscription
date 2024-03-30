@@ -167,11 +167,13 @@ export default defineAppConfig({
       activityIds: [
         'tv.danmaku.bili.MainActivityV2',
         'com.bilibili.video.story.StoryTransparentActivity',
+        'com.bilibili.bplus.im.communication.HomeCommunicationActivity',
       ],
       rules: '[text$="通知"] +2 * > [id="tv.danmaku.bili:id/close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/13229159',
         'https://i.gkd.li/import/13614090',
+        'https://i.gkd.li/import/13848840',
       ],
     },
     {
