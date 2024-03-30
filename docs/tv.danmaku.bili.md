@@ -70,6 +70,7 @@
 
 - [快照-0](https://i.gkd.li/import/13229159)
 - [快照-1](https://i.gkd.li/import/13614090)
+- [快照-2](https://i.gkd.li/import/13848840)
 
 ## 首页-推荐视频卡片广告
 
