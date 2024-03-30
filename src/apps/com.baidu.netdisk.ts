@@ -30,7 +30,8 @@ export default defineAppConfig({
         {
           key: 3,
           name: '相册页面-激活无限空间弹窗',
-          activityIds: 'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
+          activityIds:
+            'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
           matches:
             '@ImageView[id="com.baidu.netdisk:id/close_btn"] + ImageView[id="com.baidu.netdisk:id/bg_image"]',
           snapshotUrls: 'https://i.gkd.li/import/12648987',
@@ -72,7 +73,7 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12863984',
     },
     {
-      key:6,
+      key: 6,
       name: '功能类-续费横幅提示',
       desc: '关闭续费横幅提示',
       quickFind: true,
