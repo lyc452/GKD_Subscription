@@ -10,7 +10,7 @@ const subsConfig: RawSubscription = {
   author: 'lyc452',
   supportUri: 'https://github.com/lyc452/subscription',
   updateUrl:
-    'https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5',
+    'https://github.com/lyc452/subscription/blob/main/dist/gkd.json5',
   checkUpdateUrl:
     'https://github.com/lyc452/subscription/blob/main/dist/gkd.version.json',
   globalGroups,
