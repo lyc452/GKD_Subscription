@@ -8,11 +8,11 @@ const subsConfig: RawSubscription = {
   version: 0,
   name: '默认订阅',
   author: 'lisonge',
-  supportUri: 'https://github.com/gkd-kit/subscription',
+  supportUri: 'https://github.com/lyc452/subscription',
   updateUrl:
-    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files',
+    'https://registry.npmmirror.com/@lyc452/subscription/latest/files',
   checkUpdateUrl:
-    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json',
+    'https://registry.npmmirror.com/@lyc452/subscription/latest/files/dist/gkd.version.json',
   globalGroups,
   categories,
   apps,
