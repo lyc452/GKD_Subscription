@@ -1,11 +1,9 @@
-# @gkd-kit/subscription
-
-`默认规则` 仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
+# @lyc452/subscription
 
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://fastly.jsdelivr.net/npm/@gkd-kit/subscription
+https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5
 ```
 
 当前版本: v1
