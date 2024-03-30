@@ -9,6 +9,7 @@ export default defineAppConfig({
       quickFind: true,
       name: '开屏广告-补充',
       desc: '右上角圆形跳过按钮',
+      categories: RawCategory[0],
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
