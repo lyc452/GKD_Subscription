@@ -9,7 +9,8 @@ const subsConfig: RawSubscription = {
   name: '默认订阅',
   author: 'lisonge',
   supportUri: 'https://github.com/lyc452/subscription',
-  updateUrl: 'https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5',
+  updateUrl:
+    'https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5',
   checkUpdateUrl:
     'https://github.com/lyc452/subscription/blob/main/dist/gkd.version.json',
   globalGroups,
