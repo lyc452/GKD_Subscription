@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       // matchTime: 10000, 部分更新提示不在10s内
       actionMaximum: 1,
@@ -22,7 +22,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '红包弹窗',
+      name: '功能类-红包弹窗',
       rules: [
         {
           key: 0,
@@ -57,7 +57,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '活动弹窗',
+      name: '全屏广告-活动弹窗',
       quickFind: true,
       rules: [
         {
@@ -100,7 +100,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '付款后广告弹窗',
+      name: '全屏广告-付款后',
       quickFind: true,
       activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
       rules: 'bb Button[text="关闭"]',
@@ -108,7 +108,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '吃货卡续费弹窗',
+      name: '功能类-吃货卡续费弹窗',
       quickFind: true,
       activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
       rules: '@View + View >2 [text="买校园版超级吃货卡"]',
@@ -116,7 +116,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '首页-底部浮窗广告',
+      name: '局部广告-首页底部',
       activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
       rules:
         'LinearLayout >n FrameLayout >n ViewGroup[childCount=3] + ViewGroup[clickable=true]',
@@ -124,7 +124,7 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '开启定位提醒',
+      name: '定位提示',
       desc: '自动点击X',
       enable: false,
       quickFind: true,
@@ -154,6 +154,19 @@ export default defineAppConfig({
           matches:
             '@View[visibleToUser=true] < * <2 [id="me.ele:id/frame_bottom_bg"]',
           snapshotUrls: 'https://i.gkd.li/import/13931205',
+        },
+      ],
+    },
+    {
+      key: 10,
+      name: '局部广告-消息页',
+      enable: false,
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
+          matches: 'ViewGroup[id="me.ele:id/vg_item_content"] > ImageView[id="me.ele:id/close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/import/14812552',
         },
       ],
     },
