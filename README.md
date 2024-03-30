@@ -5,7 +5,7 @@
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://fastly.jsdelivr.net/npm/@gkd-kit/subscription
+https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5
 ```
 
 当前版本: v186
