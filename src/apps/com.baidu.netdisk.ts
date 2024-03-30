@@ -7,7 +7,7 @@ export default defineAppConfig({
   groups: [
     {
       key: 1,
-      name: '活动弹窗',
+      name: '全屏广告-活动弹窗',
       desc: '关闭各种活动弹窗信息',
       quickFind: true,
       rules: [
@@ -27,11 +27,19 @@ export default defineAppConfig({
             '[id="com.baidu.netdisk:id/view_content_bg2"] - [id="com.baidu.netdisk:id/iv_close"]',
           snapshotUrls: ['https://i.gkd.li/import/12923937'],
         },
+        {
+          key: 3,
+          name: '相册页面-激活无限空间弹窗',
+          activityIds: 'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
+          matches:
+            '@ImageView[id="com.baidu.netdisk:id/close_btn"] + ImageView[id="com.baidu.netdisk:id/bg_image"]',
+          snapshotUrls: 'https://i.gkd.li/import/12648987',
+        },
       ],
     },
     {
       key: 2,
-      name: '首页banner广告',
+      name: '局部广告-首页banner广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
@@ -39,7 +47,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '首页热门广告',
+      name: '局部广告-首页热门广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules:
@@ -48,7 +56,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '我的页面-限时福利',
+      name: '局部广告-我的页面-限时福利',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       quickFind: true,
       rules: '@TextView + [text="专属福利"]',
@@ -56,17 +64,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '相册页面-激活无限空间弹窗',
-      quickFind: true,
-      activityIds:
-        'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
-      rules:
-        '@ImageView[id="com.baidu.netdisk:id/close_btn"] + ImageView[id="com.baidu.netdisk:id/bg_image"]',
-      snapshotUrls: 'https://i.gkd.li/import/12648987',
-    },
-    {
-      key: 6,
-      name: '更新弹窗',
+      name: '更新提示',
       quickFind: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -74,8 +72,8 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12863984',
     },
     {
-      key: 7,
-      name: '续费横幅提示',
+      key:6,
+      name: '功能类-续费横幅提示',
       desc: '关闭续费横幅提示',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
@@ -88,8 +86,8 @@ export default defineAppConfig({
     },
     {
       enable: false,
-      key: 8,
-      name: '开启消息通知弹窗',
+      key: 7,
+      name: '通知提示',
       desc: '自动点击关闭',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
@@ -98,8 +96,8 @@ export default defineAppConfig({
     },
     {
       enable: false,
-      key: 10,
-      name: '看视频免费享极速下载弹窗',
+      key: 8,
+      name: '功能类-看视频免费享极速下载弹窗',
       desc: '自动点击x按钮',
       quickFind: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
@@ -108,9 +106,9 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/12783106',
     },
     {
-      key: 11,
+      key: 9,
       quickFind: true,
-      name: '幸运券包弹窗',
+      name: '功能类-幸运券包弹窗',
       desc: '自动点击关闭',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [

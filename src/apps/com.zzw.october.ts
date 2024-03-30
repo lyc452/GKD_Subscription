@@ -15,15 +15,14 @@ export default defineAppConfig({
       activityIds: 'com.zzw.october.LaunchActivity',
       rules: [
         {
-          matches:
-            'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
+          matches: 'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
           snapshotUrls: 'https://i.gkd.li/import/14810136',
         },
       ],
     },
     {
       key: 2,
-      name: '主页广告',
+      name: '全屏广告',
       activityIds: ['com.zzw.october.MainActivity'],
       rules: [
         {
@@ -40,8 +39,7 @@ export default defineAppConfig({
           key: 2,
           quickFind: true,
           activityIds: 'com.zzw.october.MainActivity',
-          matches:
-            'FrameLayout[id="android:id/content"] > FrameLayout > FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
+          matches: 'FrameLayout[id="android:id/content"] > FrameLayout > FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/14810149',
         },
       ],
