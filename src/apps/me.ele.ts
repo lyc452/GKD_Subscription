@@ -165,7 +165,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
-          matches: 'ViewGroup[id="me.ele:id/vg_item_content"] > ImageView[id="me.ele:id/close_iv"]',
+          matches:
+            'ViewGroup[id="me.ele:id/vg_item_content"] > ImageView[id="me.ele:id/close_iv"]',
           snapshotUrls: 'https://i.gkd.li/import/14812552',
         },
       ],
