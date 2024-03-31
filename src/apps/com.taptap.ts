@@ -16,13 +16,12 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '游戏浏览界面-推荐广告',
+      name: '分段广告-游戏浏览界面',
       desc: '自动点击【对此内容不感兴趣】',
       rules: [
         {
           key: 0,
           activityIds: 'com.taptap.other.basic.impl.TapMainActivity',
-
           matches:
             '[id="com.taptap.app.middle:id/decision_layout_mask"] + @[id="com.taptap.app.game:id/app_menu"][visibleToUser=true]',
           snapshotUrls: [
@@ -33,6 +32,7 @@ export default defineAppConfig({
         },
         {
           key: 1,
+          preKeys: [0],
           activityIds: [
             'com.taptap.game.discovery.impl.findgame.allgame.dialog.FindGameMenuDialog',
             'com.taptap.other.basic.impl.TapMainActivity',
@@ -47,7 +47,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '版本更新',
+      name: '更新提示',
       quickFind: true,
       activityIds: 'com.taptap.upgrade.library.dialog.UpgradeDialogAct',
       rules: [
