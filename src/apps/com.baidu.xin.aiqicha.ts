@@ -30,7 +30,8 @@ export default defineAppConfig({
         },
         {
           key: 1,
-          matches: '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
+          matches:
+            '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
           snapshotUrls: 'https://i.gkd.li/import/12755756',
         },
       ],
