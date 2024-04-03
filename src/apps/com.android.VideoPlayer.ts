@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.android.VideoPlayer',
-  name: 'i 视频',
+  name: '视频',
   groups: [
     {
       key: 1,

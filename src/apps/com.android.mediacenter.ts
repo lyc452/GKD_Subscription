@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.android.mediacenter',
-  name: '华为音乐',
+  name: '音乐',
   groups: [
     {
       key: 0,

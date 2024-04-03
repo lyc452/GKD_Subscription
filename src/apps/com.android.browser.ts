@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.android.browser',
-  name: '小米浏览器',
+  name: '浏览器',
   groups: [
     {
       key: 0,

@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.android.thememanager',
-  name: 'miui主题壁纸',
+  name: '主题壁纸',
   groups: [
     {
       key: 1,

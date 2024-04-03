@@ -2,7 +2,7 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.android.packageinstaller',
-  name: 'vivo 软件包安装程序',
+  name: '软件包安装程序',
   groups: [
     {
       key: 1,
