@@ -1,6 +1,6 @@
 # APKPure
 
-存在 4 规则组 - [com.apkpure.aegon](/src/apps/com.apkpure.aegon.ts)
+存在 5 规则组 - [com.apkpure.aegon](/src/apps/com.apkpure.aegon.ts)
 
 ## 功能类-热门推荐关闭
 
@@ -26,3 +26,9 @@
 默认禁用 - 下次添加
 
 - [快照-0](https://i.gkd.li/import/13416401)
+
+## 更新提示
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/14849861)
