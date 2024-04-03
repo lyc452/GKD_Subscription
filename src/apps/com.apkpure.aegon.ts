@@ -74,5 +74,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 5,
+      name: '更新提示',
+      quickFind: true,
+      rules: [
+        {
+          activityIds: 'com.apkmatrix.components.clientupdate.UpdateDialogActivity',
+          matches: 'TextView[text*="Update"] +2 Button[text="CANCEL"]',
+          snapshotUrls: 'https://i.gkd.li/import/14849861',
+        },
+      ],
+    },
   ],
 });
