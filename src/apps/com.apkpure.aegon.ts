@@ -80,7 +80,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          activityIds: 'com.apkmatrix.components.clientupdate.UpdateDialogActivity',
+          activityIds:
+            'com.apkmatrix.components.clientupdate.UpdateDialogActivity',
           matches: 'TextView[text*="Update"] +2 Button[text="CANCEL"]',
           snapshotUrls: 'https://i.gkd.li/import/14849861',
         },
