@@ -1,4 +1,4 @@
-# 小米浏览器
+# 浏览器
 
 存在 2 规则组 - [com.android.browser](/src/apps/com.android.browser.ts)
 

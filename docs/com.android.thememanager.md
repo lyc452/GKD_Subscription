@@ -1,4 +1,4 @@
-# miui主题壁纸
+# 主题壁纸
 
 存在 2 规则组 - [com.android.thememanager](/src/apps/com.android.thememanager.ts)
 

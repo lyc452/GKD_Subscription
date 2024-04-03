@@ -1,4 +1,4 @@
-# vivo 软件包安装程序
+# 软件包安装程序
 
 存在 1 规则组 - [com.android.packageinstaller](/src/apps/com.android.packageinstaller.ts)
 

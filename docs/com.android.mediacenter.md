@@ -1,4 +1,4 @@
-# 华为音乐
+# 音乐
 
 存在 3 规则组 - [com.android.mediacenter](/src/apps/com.android.mediacenter.ts)
 

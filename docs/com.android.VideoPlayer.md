@@ -1,4 +1,4 @@
-# i 视频
+# 视频
 
 存在 1 规则组 - [com.android.VideoPlayer](/src/apps/com.android.VideoPlayer.ts)
 
