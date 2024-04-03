@@ -5,7 +5,7 @@ import type { RawSubscription } from './types';
 
 const subsConfig: RawSubscription = {
   id: 1,
-  version: 1,
+  version: 4,
   name: 'GKD订阅',
   author: 'lyc452',
   supportUri: 'https://github.com/lyc452/subscription',
