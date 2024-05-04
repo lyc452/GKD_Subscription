@@ -177,7 +177,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: '[id="com.sankuai.meituan:id/address_center_location_close"]',
+          matches:
+            '[id="com.sankuai.meituan:id/address_center_location_close"]',
           snapshotUrls: 'https://i.gkd.li/import/15210167',
         },
       ],

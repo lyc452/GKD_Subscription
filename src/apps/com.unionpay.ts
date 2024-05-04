@@ -64,7 +64,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.unionpay.base.UPDialog',
-          matches: '[text$="想访问您的位置信息"] < * +2 LinearLayout > [id="com.unionpay:id/btn_cancel"][visibleToUser=true]',
+          matches:
+            '[text$="想访问您的位置信息"] < * +2 LinearLayout > [id="com.unionpay:id/btn_cancel"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/12695773',
         },
         {

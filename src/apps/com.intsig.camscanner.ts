@@ -18,7 +18,8 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches: '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
+          matches:
+            '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
           snapshotUrls: 'https://i.gkd.li/import/12668813',
         },
         {

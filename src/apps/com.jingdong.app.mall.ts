@@ -52,7 +52,8 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          matches: 'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
+          matches:
+            'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13258973',
             'https://i.gkd.li/import/13258980',

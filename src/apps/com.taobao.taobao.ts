@@ -115,14 +115,16 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches: 'View[id=null] > [text="立即参加"] + TextView[id=null][clickable=true]',
+          matches:
+            'View[id=null] > [text="立即参加"] + TextView[id=null][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12642813',
         },
         {
           key: 2,
-          matches: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
+          matches:
+            '@View[clickable=true] - View > View > TextView[text="立即签到"]',
           snapshotUrls: 'https://i.gkd.li/import/12642798',
-        }
+        },
       ],
     },
     {
