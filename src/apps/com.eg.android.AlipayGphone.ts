@@ -7,7 +7,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 0,
-      name: '更新提示-关闭花呗升级弹窗',
+      name: '功能类-关闭花呗升级弹窗',
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: [
@@ -49,7 +49,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 1,
-      name: '定位提示-请求定位权限弹窗',
+      name: '定位提示',
       quickFind: true,
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules:
@@ -58,7 +58,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '通知提示-请求通知弹窗',
+      name: '通知提示',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -85,7 +85,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 3,
-      name: '更新提示-版本更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -121,7 +121,7 @@ export default defineAppConfig({
     {
       enable: false,
       key: 4,
-      name: '设置支付宝小组件',
+      name: '功能类-设置支付宝小组件',
       desc: '点击关闭',
       quickFind: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
@@ -136,7 +136,7 @@ export default defineAppConfig({
     },
     {
       key: 10,
-      name: '小程序-12306',
+      name: '功能类-小程序-12306',
       activityIds: 'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
       rules: [
         {

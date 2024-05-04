@@ -25,7 +25,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '主题详情页“下应用领主题”横幅',
+      name: '局部广告-下应用领主题',
       activityIds: [
         'com.huawei.android.thememanager.mvp.view.activity.onlinetheme.OnlineThemePreviewActivity',
         'com.huawei.android.thememanager.mvp.view.activity.onlinewallpaper.OnlineWallpaperPreviewActivity',
@@ -42,7 +42,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '主题详情页广告',
+      name: '分段广告-详情页',
       activityIds: [
         'com.huawei.android.thememanager.mvp.view.activity.onlinetheme.OnlineThemePreviewActivity',
         'com.huawei.android.thememanager.mvp.view.activity.onlinewallpaper.OnlineWallpaperPreviewActivity',
@@ -52,6 +52,7 @@ export default defineAppConfig({
       ],
       rules: [
         {
+          key: 1,
           matches:
             '[id="com.huawei.hms.ads.uiengine:id/unlike_iv"||id="com.huawei.android.thememanager:id/download_pps_close"||id="com.huawei.android.thememanager:id/pps_close"]',
           snapshotUrls: [
@@ -60,31 +61,13 @@ export default defineAppConfig({
             'https://i.gkd.li/import/12647367',
           ],
         },
-      ],
-    },
-    {
-      key: 3,
-      name: '主题详情页广告关闭弹窗',
-      activityIds: ['com.huawei.openalliance.ad.activity.FeedbackActivity'],
-      rules: [
         {
+          preKeys: 1,
           matches: '[text="直接关闭"]',
           snapshotUrls: 'https://i.gkd.li/import/12647268',
         },
-      ],
-    },
-    {
-      key: 4,
-      name: '主题详情信息流广告',
-      activityIds: [
-        'com.huawei.android.thememanager.mvp.view.activity.onlinetheme.OnlineThemePreviewActivity',
-        'com.huawei.android.thememanager.mvp.view.activity.onlinewallpaper.OnlineWallpaperPreviewActivity',
-        'com.huawei.android.thememanager.mvp.view.activity.onlinefont.OnlineFontPreviewActivity',
-        'com.huawei.android.thememanager.mvp.view.activity.paster.PasterDetailActivity',
-        'com.huawei.android.thememanager.mvp.view.activity.onlinetheme.LocalThemePreviewActivity',
-      ],
-      rules: [
         {
+          key: 2,
           matches:
             '[id="com.huawei.android.thememanager:id/pps_lable_top"||id="com.huawei.android.thememanager:id/pps_img_video_close"]',
           snapshotUrls: [
@@ -93,6 +76,7 @@ export default defineAppConfig({
           ],
         },
         {
+          preKeys: 2,
           matches:
             '[id="com.huawei.android.thememanager:id/tv_btn_uninterested"]',
           snapshotUrls: 'https://i.gkd.li/import/12647326',
@@ -100,19 +84,8 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 5,
-      name: '分类页“免费领取”',
-      activityIds: ['com.huawei.android.thememanager.HwThemeManagerActivity'],
-      rules: [
-        {
-          matches: '[id="com.huawei.android.thememanager:id/rl_ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/import/12647393',
-        },
-      ],
-    },
-    {
       key: 6,
-      name: '主页面（推荐、分类、我的）广告',
+      name: '局部广告-主页面',
       activityIds: ['com.huawei.android.thememanager.HwThemeManagerActivity'],
       rules: [
         {
@@ -130,11 +103,15 @@ export default defineAppConfig({
             '[id="com.huawei.android.thememanager:id/tv_btn_uninterested"]',
           snapshotUrls: 'https://i.gkd.li/import/12647655',
         },
+        {
+          matches: '[id="com.huawei.android.thememanager:id/rl_ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/12647393',
+        },
       ],
     },
     {
       key: 7,
-      name: '首页活动弹窗-默认禁用',
+      name: '全屏广告-首页',
       enable: false,
       activityIds: [
         'com.huawei.android.thememanager.HwThemeManagerActivity',
@@ -153,14 +130,14 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '更新弹窗',
+      name: '更新提示',
       activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
       rules: '@[text="以后再说"] + [text="立即更新"]',
       snapshotUrls: 'https://i.gkd.li/import/12727318',
     },
     {
       key: 9,
-      name: '请求通知权限弹窗',
+      name: '通知提示',
       activityIds:
         'com.huawei.android.thememanager.base.widget.ActivatePushDialog',
       rules: '@[text="取消"] < * - * >n [text="开启消息通知"]',
