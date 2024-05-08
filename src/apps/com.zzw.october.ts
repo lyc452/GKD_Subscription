@@ -8,16 +8,20 @@ export default defineAppConfig({
       key: 1,
       quickFind: true,
       name: '开屏广告-补充',
-      desc: '右上角圆形跳过按钮',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.zzw.october.LaunchActivity',
       rules: [
         {
-          matches:
-            'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
+          key: 1,
+          matches: 'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
           snapshotUrls: 'https://i.gkd.li/import/14810136',
+        },
+        {
+          key: 2,
+          matches: 'TextView[text^="跳过"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/15243364',
         },
       ],
     },
@@ -39,10 +43,15 @@ export default defineAppConfig({
         {
           key: 2,
           quickFind: true,
-          activityIds: 'com.zzw.october.MainActivity',
           matches:
             'FrameLayout[id="android:id/content"] > FrameLayout > FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
           snapshotUrls: 'https://i.gkd.li/import/14810149',
+        },
+        {
+          key: 3,
+          quickFind: true,
+          matches: '[id="com.zzw.october:id/ad_close"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/import/15243358',
         },
       ],
     },
