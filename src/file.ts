@@ -130,7 +130,7 @@ export async function* walk(dirPath: string) {
 
 export const validSnapshotUrl = (s: string) => {
   const u = new URL(s);
-  return u.pathname.startsWith('/import/');
+  return u.pathname.startsWith('/import/') || u.pathname.startsWith('/i/');
 };
 
 export const checkConfig = (newConfig: RawSubscription) => {
@@ -190,26 +190,26 @@ export const checkConfig = (newConfig: RawSubscription) => {
       const oldGroup = oldGroups.find((og) => og.key == g.key);
       if (!oldGroup || !_.isEqual(oldGroup, g)) {
         // 检查新增/变动的规则组是否能被分类
-        // if (
-        //   !categories.some(
-        //     (c) => g.name == c.name || g.name.startsWith(c.name + '-'),
-        //   )
-        // ) {
-        //   console.error({
-        //     configName: newConfig.name,
-        //     appId: app.id,
-        //     appName: app.name,
-        //     groupName: g.name,
-        //     groupKey: g.key,
-        //     categories: categories.map((c) => c.name),
-        //   });
-        //   throw new Error(
-        //     [
-        //       'invalid group name, it must equal any category name or startWith categoryName + "-".',
-        //       'example: "开屏广告" or "分段广告-朋友圈"',
-        //     ].join('\n'),
-        //   );
-        // }
+        if (
+          !categories.some(
+            (c) => g.name == c.name || g.name.startsWith(c.name + '-'),
+          )
+        ) {
+          console.error({
+            configName: newConfig.name,
+            appId: app.id,
+            appName: app.name,
+            groupName: g.name,
+            groupKey: g.key,
+            categories: categories.map((c) => c.name),
+          });
+          throw new Error(
+            [
+              'invalid group name, it must equal any category name or startWith categoryName + "-".',
+              'example: "开屏广告" or "分段广告-朋友圈"',
+            ].join('\n'),
+          );
+        }
       }
 
       if (deprecatedKeys.includes(g.key)) {
