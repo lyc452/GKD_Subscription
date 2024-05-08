@@ -52,8 +52,7 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          matches:
-            'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
+          matches: 'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13258973',
             'https://i.gkd.li/import/13258980',
@@ -69,6 +68,7 @@ export default defineAppConfig({
         'com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew',
         'com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity',
         'com.jingdong.app.mall.MainFrameActivity',
+        'com.jd.lib.message.messagecenter2.MessageCenterMainActivity',
       ],
       rules: [
         {
@@ -90,6 +90,16 @@ export default defineAppConfig({
           key: 3,
           matches: '[id="com.jingdong.app.mall:id/btn_close"]',
           snapshotUrls: 'https://i.gkd.li/import/13463618',
+        },
+        {
+          key: 4,
+          matches: '[text*="通知"] +n [id="com.jingdong.app.mall:id/be8"]',
+          snapshotUrls: 'https://i.gkd.li/i/15249378',
+        },
+        {
+          key: 5,
+          matches: '[text*="通知"] - FrameLayout > [id="com.jd.lib.message.feature:id/di"]',
+          snapshotUrls: 'https://i.gkd.li/i/15249379',
         },
       ],
     },

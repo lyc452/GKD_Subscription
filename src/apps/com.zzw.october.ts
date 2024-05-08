@@ -15,8 +15,7 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches:
-            'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
+          matches: 'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
           snapshotUrls: 'https://i.gkd.li/import/14810136',
         },
         {
@@ -45,7 +44,7 @@ export default defineAppConfig({
           key: 2,
           quickFind: true,
           matches:
-            'FrameLayout[id="android:id/content"] > FrameLayout > FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
+            'FrameLayout[id="android:id/content"] >6 ImageView',
           snapshotUrls: 'https://i.gkd.li/import/14810149',
         },
         {
