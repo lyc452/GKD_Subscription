@@ -110,26 +110,35 @@ export default defineAppConfig({
       ],
     },
     {
-      enable: false,
       key: 7,
       name: '定位提示',
-      desc: '首页/外卖界面-【打开位置开关弹窗】-点击右侧x关闭',
-      activityIds: [
-        'com.meituan.android.pt.homepage.activity.MainActivity',
-        'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
-      ],
       rules: [
-        '[id ="com.sankuai.meituan:id/location_close"]',
-        '[id ="com.sankuai.meituan:id/location_layer_close"]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/import/12874657',
-        'https://i.gkd.li/import/12910210',
-        'https://i.gkd.li/import/12910211',
+        {
+          key:0,
+          matches: 'TextView[text="定位服务未开启"] + TextView + ViewGroup + ViewGroup',
+          snapshotUrls: 'https://i.gkd.li/import/13514154',
+          activityIds: 'com.meituan.android.food.homepage.FoodHomeMRNActivity',
+        },
+        {
+          key: 1,
+          activityIds: [
+            'com.meituan.android.pt.homepage.activity.MainActivity',
+            'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
+          ],
+          matches: [
+            '[id ="com.sankuai.meituan:id/location_close"]',
+            '[id ="com.sankuai.meituan:id/location_layer_close"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/12874657',
+            'https://i.gkd.li/import/12910210',
+            'https://i.gkd.li/import/12910211',
+            'https://i.gkd.li/import/13514061',
+          ],
+        },
       ],
     },
     {
-      enable: false,
       key: 8,
       name: '通知提示',
       desc: '点击跳过',
@@ -177,8 +186,7 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches:
-            '[id="com.sankuai.meituan:id/address_center_location_close"]',
+          matches: '[id="com.sankuai.meituan:id/address_center_location_close"]',
           snapshotUrls: 'https://i.gkd.li/import/15210167',
         },
       ],

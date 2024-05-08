@@ -6,6 +6,19 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
+      name: '定位提示',
+      key: 0,
+      quickFind: true,
+      matchTime: 10000,
+      rules: [
+        {
+          matches: '[id="com.autonavi.minimap:id/scene_permission_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/13779722',
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '更新提示',
       actionMaximum: 1,
