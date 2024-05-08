@@ -15,7 +15,8 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches: 'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
+          matches:
+            'FrameLayout[id="com.zzw.october:id/out_ad"] > FrameLayout > FrameLayout > @View',
           snapshotUrls: 'https://i.gkd.li/import/14810136',
         },
         {
