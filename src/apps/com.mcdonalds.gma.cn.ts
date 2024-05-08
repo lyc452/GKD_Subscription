@@ -33,7 +33,8 @@ export default defineAppConfig({
       quickFind: true,
       rules: [
         {
-          matches: '[text*="设备信息"] +n LinearLayout > [id="com.mcdonalds.gma.cn:id/tv_cancel"]',
+          matches:
+            '[text*="设备信息"] +n LinearLayout > [id="com.mcdonalds.gma.cn:id/tv_cancel"]',
           snapshotUrls: 'https://i.gkd.li/import/13465868',
           activityIds: 'com.mcdonalds.gma.cn.activity.MainActivity',
         },
