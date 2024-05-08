@@ -13,7 +13,8 @@ export default defineAppConfig({
         {
           matches: 'Button[text="开启通知权限"] - Button[text="以后再说"]',
           snapshotUrls: 'https://i.gkd.li/import/13807002',
-          activityIds: 'com.huawei.appgallery.jointmessage.jointmessage.impl.activity.NotificationSwitchDialogActivity',
+          activityIds:
+            'com.huawei.appgallery.jointmessage.jointmessage.impl.activity.NotificationSwitchDialogActivity',
         },
       ],
     },

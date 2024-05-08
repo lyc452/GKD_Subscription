@@ -114,8 +114,9 @@ export default defineAppConfig({
       name: '定位提示',
       rules: [
         {
-          key:0,
-          matches: 'TextView[text="定位服务未开启"] + TextView + ViewGroup + ViewGroup',
+          key: 0,
+          matches:
+            'TextView[text="定位服务未开启"] + TextView + ViewGroup + ViewGroup',
           snapshotUrls: 'https://i.gkd.li/import/13514154',
           activityIds: 'com.meituan.android.food.homepage.FoodHomeMRNActivity',
         },
@@ -186,7 +187,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: '[id="com.sankuai.meituan:id/address_center_location_close"]',
+          matches:
+            '[id="com.sankuai.meituan:id/address_center_location_close"]',
           snapshotUrls: 'https://i.gkd.li/import/15210167',
         },
       ],
