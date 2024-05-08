@@ -1,6 +1,6 @@
 # 高德地图
 
-存在 5 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
+存在 6 规则组 - [com.autonavi.minimap](/src/apps/com.autonavi.minimap.ts)
 
 ## 更新提示
 
@@ -35,3 +35,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642857)
+
+## 定位提示
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/import/13779722)

@@ -206,7 +206,7 @@
 | 丰声                   | [com.sfexpress.sfim](/docs/com.sfexpress.sfim.md)                                                                                                                 | 1      |
 | 纷玩岛                 | [cn.com.livelab](/docs/cn.com.livelab.md)                                                                                                                         | 1      |
 | 富民银行               | [com.fbank.mobile](/docs/com.fbank.mobile.md)                                                                                                                     | 1      |
-| 高德地图               | [com.autonavi.minimap](/docs/com.autonavi.minimap.md)                                                                                                             | 5      |
+| 高德地图               | [com.autonavi.minimap](/docs/com.autonavi.minimap.md)                                                                                                             | 6      |
 | 稿定设计               | [com.hlg.daydaytobusiness](/docs/com.hlg.daydaytobusiness.md)                                                                                                     | 1      |
 | 高佣联盟               | [com.shangfang.gylm](/docs/com.shangfang.gylm.md)                                                                                                                 | 1      |
 | 个人图书馆             | [com.doc360.client](/docs/com.doc360.client.md)                                                                                                                   | 1      |
@@ -249,7 +249,7 @@
 | 华为生活服务           | [com.huawei.lives](/docs/com.huawei.lives.md)                                                                                                                     | 1      |
 | 华为视频               | [com.huawei.himovie](/docs/com.huawei.himovie.md)                                                                                                                 | 1      |
 | 华为天气               | [com.huawei.android.totemweather](/docs/com.huawei.android.totemweather.md)                                                                                       | 3      |
-| 华为应用市场           | [com.huawei.appmarket](/docs/com.huawei.appmarket.md)                                                                                                             | 1      |
+| 华为应用市场           | [com.huawei.appmarket](/docs/com.huawei.appmarket.md)                                                                                                             | 2      |
 | 华为音乐               | [com.huawei.music](/docs/com.huawei.music.md)                                                                                                                     | 7      |
 | 华为运动健康           | [com.huawei.health](/docs/com.huawei.health.md)                                                                                                                   | 5      |
 | 华为主题               | [com.huawei.android.thememanager](/docs/com.huawei.android.thememanager.md)                                                                                       | 7      |
@@ -311,7 +311,7 @@
 | 六只脚                 | [com.topgether.sixfoot](/docs/com.topgether.sixfoot.md)                                                                                                           | 1      |
 | 绿洲                   | [com.sina.oasis](/docs/com.sina.oasis.md)                                                                                                                         | 1      |
 | 马蜂窝                 | [com.mfw.roadbook](/docs/com.mfw.roadbook.md)                                                                                                                     | 1      |
-| 麦当劳                 | [com.mcdonalds.gma.cn](/docs/com.mcdonalds.gma.cn.md)                                                                                                             | 2      |
+| 麦当劳                 | [com.mcdonalds.gma.cn](/docs/com.mcdonalds.gma.cn.md)                                                                                                             | 3      |
 | 埋堆堆                 | [com.tvbc.maiduidui](/docs/com.tvbc.maiduidui.md)                                                                                                                 | 1      |
 | 芒果TV                 | [com.hunantv.imgo.activity](/docs/com.hunantv.imgo.activity.md)                                                                                                   | 4      |
 | 漫画人极速版           | [com.jisu.manhua](/docs/com.jisu.manhua.md)                                                                                                                       | 1      |

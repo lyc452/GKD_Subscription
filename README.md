@@ -8,9 +8,9 @@
 https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5
 ```
 
-当前版本: v1
+当前版本: v2
 
-当前订阅文件已适配 643 个 APP, 共有 1401 规则组
+当前订阅文件已适配 643 个 APP, 共有 1404 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
