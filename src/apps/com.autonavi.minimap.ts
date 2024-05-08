@@ -6,19 +6,6 @@ export default defineAppConfig({
   deprecatedKeys: [0],
   groups: [
     {
-      name: '定位提示',
-      key: 0,
-      quickFind: true,
-      matchTime: 10000,
-      rules: [
-        {
-          matches: '[id="com.autonavi.minimap:id/scene_permission_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/13779722',
-          activityIds: 'com.autonavi.map.activity.NewMapActivity',
-        },
-      ],
-    },
-    {
       key: 1,
       name: '更新提示',
       actionMaximum: 1,
@@ -83,6 +70,19 @@ export default defineAppConfig({
       rules:
         '@ImageView < [desc="关闭"][clickable=true] - ViewGroup > ViewGroup > ViewGroup > View[text="立即领取"]',
       snapshotUrls: ['https://i.gkd.li/import/12642857'],
+    },
+    {
+      name: '定位提示',
+      key: 6,
+      quickFind: true,
+      matchTime: 10000,
+      rules: [
+        {
+          matches: '[id="com.autonavi.minimap:id/scene_permission_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/13779722',
+          activityIds: 'com.autonavi.map.activity.NewMapActivity',
+        },
+      ],
     },
   ],
 });
