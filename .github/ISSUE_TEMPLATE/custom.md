@@ -4,7 +4,6 @@ about: Describe this issue template's purpose here.
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 **请输入需要添加规则的界面的快照或者生成的链接, 也可在后面补充其它信息**
