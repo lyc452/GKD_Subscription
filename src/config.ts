@@ -8,11 +8,9 @@ const subsConfig: RawSubscription = {
   version: 1,
   name: 'LYC\'s GKD Subscription',
   author: 'lyc452',
-  supportUri: 'https://github.com/lyc452/subscription',
-  updateUrl:
-    'https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5',
+  supportUri: 'https://github.com/lyc452/GKD_Subscription',
   checkUpdateUrl:
-    'https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.version.json',
+    './gkd.version.json5',
   globalGroups,
   categories,
   apps,
