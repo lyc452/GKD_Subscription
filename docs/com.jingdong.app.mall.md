@@ -37,6 +37,8 @@
 - [快照-2](https://i.gkd.li/import/13917163)
 - [快照-3](https://i.gkd.li/import/12839865)
 - [快照-4](https://i.gkd.li/import/13463618)
+- [快照-5](https://i.gkd.li/i/15249378)
+- [快照-6](https://i.gkd.li/i/15249379)
 
 ## 全屏广告
 
