@@ -1,11 +1,17 @@
-# @lyc452/subscription
+# @lyc452/GKD_Subscription
 
 `默认规则` 仅启用 `开屏广告` 一类规则, 其它所有规则均需用户手动打开
 
 在 GKD 内添加以下链接即可使用此规则
 
 ```txt
-https://raw.githubusercontent.com/lyc452/subscription/main/dist/gkd.json5
+https://raw.githubusercontent.com/lyc452/GKD_Subscription/main/dist/gkd.json5
+```
+
+或者使用cdn加速后的链接
+
+```txt
+https://cdn.jsdelivr.net/gh/lyc452/GKD_Subscription/dist/gkd.json5
 ```
 
 当前版本: v--VERSION--
