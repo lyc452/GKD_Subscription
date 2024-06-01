@@ -45,7 +45,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
-          matches: '[id="com.hihonor.appmarket:id/app_recommendation_cancel_btn"][visibleToUser=true]',
+          matches:
+            '[id="com.hihonor.appmarket:id/app_recommendation_cancel_btn"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15521068',
         },
       ],
