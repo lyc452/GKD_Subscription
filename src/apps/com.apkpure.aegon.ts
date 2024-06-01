@@ -87,5 +87,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 6,
+      name: '功能类-欢迎回来',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.apkpure.aegon.main.activity.MainTabActivity',
+          matches: '@RelativeLayout - [text="欢迎回来"]',
+          snapshotUrls: 'https://i.gkd.li/i/15521111',
+        },
+      ],
+    },
   ],
 });
