@@ -37,7 +37,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.intsig.camscanner.DocumentActivity',
-          matches: '[id="com.intsig.camscanner:id/tv_ad"] - [id="com.intsig.camscanner:id/iv_close"]',
+          matches:
+            '[id="com.intsig.camscanner:id/tv_ad"] - [id="com.intsig.camscanner:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15521471',
         },
       ],
@@ -51,8 +52,10 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
-          matches: '[text="新功能上线"] - [id="com.intsig.camscanner:id/iv_close"]',
+          activityIds:
+            'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
+          matches:
+            '[text="新功能上线"] - [id="com.intsig.camscanner:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15521511',
         },
       ],
