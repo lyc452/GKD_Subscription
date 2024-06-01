@@ -30,5 +30,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '局部广告-文档详情页',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.intsig.camscanner.DocumentActivity',
+          matches: '[id="com.intsig.camscanner:id/tv_ad"] - [id="com.intsig.camscanner:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15521471',
+        },
+      ],
+    },
   ],
 });
