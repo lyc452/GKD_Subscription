@@ -42,5 +42,20 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 3,
+      name: '功能类-新功能提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
+          matches: '[text="新功能上线"] - [id="com.intsig.camscanner:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15521511',
+        },
+      ],
+    },
   ],
 });
