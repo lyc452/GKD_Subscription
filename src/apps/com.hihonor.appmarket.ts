@@ -36,7 +36,7 @@ export default defineAppConfig({
       snapshotUrls: 'https://i.gkd.li/import/13073319',
     },
     {
-      key: 1,
+      key: 4,
       name: '功能类-欢迎回来',
       matchTime: 10000,
       actionMaximum: 1,
