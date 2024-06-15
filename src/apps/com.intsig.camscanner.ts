@@ -60,5 +60,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 4,
+      name: '全屏广告-扫描达人礼',
+      matchTime: 10000,
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.intsig.camscanner.DocumentActivity',
+          matches: '[text="扫描达人礼"] +n [id="com.intsig.camscanner:id/tv_cancel"][text="放弃优惠"]',
+          snapshotUrls: 'https://i.gkd.li/i/15847787',
+        },
+      ],
+    },
   ],
 });
