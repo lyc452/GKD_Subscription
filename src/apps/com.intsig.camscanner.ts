@@ -66,7 +66,7 @@ export default defineAppConfig({
       matchTime: 10000,
       rules: [
         {
-          key:1,
+          key: 1,
           quickFind: true,
           activityIds: 'com.intsig.camscanner.DocumentActivity',
           matches:
@@ -75,8 +75,10 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: 'TextView[text="广告"][visibleToUser=true] < View - View <<2 View + View >3 Image[visibleToUser=true]',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            'TextView[text="广告"][visibleToUser=true] < View - View <<2 View + View >3 Image[visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15858222',
         },
       ],
