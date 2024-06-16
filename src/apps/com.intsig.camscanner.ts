@@ -62,14 +62,21 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '全屏广告-扫描达人礼',
+      name: '全屏广告-文档详情页',
       matchTime: 10000,
       rules: [
         {
+          key:1,
           quickFind: true,
           activityIds: 'com.intsig.camscanner.DocumentActivity',
           matches: '[text="扫描达人礼"] +n [id="com.intsig.camscanner:id/tv_cancel"][text="放弃优惠"]',
           snapshotUrls: 'https://i.gkd.li/i/15847787',
+        },
+        {
+          key: 2,
+          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: 'TextView[text="广告"][visibleToUser=true] < View - View <<2 View + View >3 Image[visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/15858222',
         },
       ],
     },
