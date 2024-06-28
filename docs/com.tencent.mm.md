@@ -1,6 +1,6 @@
 # 微信
 
-存在 20 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
+存在 18 规则组 - [com.tencent.mm](/src/apps/com.tencent.mm.ts)
 
 ## 分段广告-朋友圈广告
 
@@ -124,13 +124,6 @@
 
 - [快照-0](https://i.gkd.li/import/12793745)
 
-## 全屏广告-提瓦特助手小程序-弹窗广告
-
-默认禁用
-
-- [快照-0](https://i.gkd.li/import/12926021)
-- [快照-1](https://i.gkd.li/import/13459614)
-
 ## 分段广告-小程序-内部广告
 
 默认禁用
@@ -140,12 +133,8 @@
 - [快照-2](https://i.gkd.li/import/13378208)
 - [快照-3](https://i.gkd.li/import/13200044)
 - [快照-4](https://i.gkd.li/import/13200048)
-
-## 全屏广告-小程序-京东购物
-
-默认禁用 - 低价包邮广告
-
-- [快照-0](https://i.gkd.li/import/13298294)
+- [快照-5](https://i.gkd.li/import/12926021)
+- [快照-6](https://i.gkd.li/import/13459614)
 
 ## 青少年模式
 
