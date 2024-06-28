@@ -376,30 +376,6 @@ export default defineAppConfig({
     },
     {
       enable: false,
-      key: 13,
-      name: '全屏广告-提瓦特助手小程序-弹窗广告',
-      activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
-      rules: [
-        {
-          key: 0,
-          matches: [
-            'RelativeLayout[childCount=1][clickable=true] > [text="提瓦特小助手"]',
-            'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
-          ],
-          snapshotUrls: 'https://i.gkd.li/import/12926021',
-        },
-        {
-          key: 1,
-          matches: [
-            'FrameLayout > FrameLayout > FrameLayout > TextView[text="广告"]',
-            'FrameLayout[childCount=6] + FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView',
-          ],
-          snapshotUrls: 'https://i.gkd.li/import/13459614',
-        },
-      ],
-    },
-    {
-      enable: false,
       key: 14,
       name: '分段广告-小程序-内部广告',
       activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
@@ -425,34 +401,52 @@ export default defineAppConfig({
         },
         {
           preKeys: [0, 1],
-          key: 11,
+          key: 2,
           name: '点击原因【不感兴趣】',
           matches: '[text="不感兴趣"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13200044',
         },
         {
-          preKeys: 11,
-          key: 12,
+          preKeys: 2,
+          key: 3,
           name: '点击原因【与我无关】',
           matches: '[text="与我无关"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13200048',
         },
+        // 原“提瓦特助手小程序-弹窗广告”
+        {
+          key: 4,
+          matches: [
+            'RelativeLayout[childCount=1][clickable=true] > [text="提瓦特小助手"]',
+            'FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/12926021',
+        },
+        {
+          key: 5,
+          matches: [
+            'FrameLayout > FrameLayout > FrameLayout > TextView[text="广告"]',
+            'FrameLayout[childCount=6] + FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13459614',
+        },
       ],
     },
-    {
-      enable: false,
-      key: 16,
-      name: '全屏广告-小程序-京东购物',
-      desc: '低价包邮广告',
-      actionDelay: 500,
-      actionMaximum: 1,
-      activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
-      rules: {
-        matches: '@Image -n * > View[text="可横向滚动"]',
-        action: 'clickCenter',
-        snapshotUrls: ['https://i.gkd.li/import/13298294'],
-      },
-    },
+    // 此规则在其他微信小程序内频繁误触发
+    // {
+    //   enable: false,
+    //   key: 16,
+    //   name: '全屏广告-小程序-京东购物',
+    //   desc: '低价包邮广告',
+    //   actionDelay: 500,
+    //   actionMaximum: 1,
+    //   activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
+    //   rules: {
+    //     matches: '@Image -n * > View[text="可横向滚动"]',
+    //     action: 'clickCenter',
+    //     snapshotUrls: ['https://i.gkd.li/import/13298294'],
+    //   },
+    // },
     {
       key: 17,
       name: '青少年模式',
