@@ -8,7 +8,7 @@
 https://raw.githubusercontent.com/lyc452/GKD_Subscription/main/dist/gkd.json5
 ```
 
-或者使用cdn加速后的链接（推荐）
+或者使用cdn加速后的链接（更新可能有延迟）
 
 ```txt
 https://cdn.jsdelivr.net/gh/lyc452/GKD_Subscription/dist/gkd.json5
