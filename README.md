@@ -8,15 +8,15 @@
 https://raw.githubusercontent.com/lyc452/GKD_Subscription/main/dist/gkd.json5
 ```
 
-或者使用cdn加速后的链接（更新可能不及时）
+或者使用cdn加速后的链接（推荐）
 
 ```txt
 https://cdn.jsdelivr.net/gh/lyc452/GKD_Subscription/dist/gkd.json5
 ```
 
-当前版本: v4
+当前版本: v5
 
-当前订阅文件已适配 643 个 APP, 共有 1406 规则组
+当前订阅文件已适配 644 个 APP, 共有 1410 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 
