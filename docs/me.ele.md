@@ -1,6 +1,6 @@
 # 饿了么
 
-存在 9 规则组 - [me.ele](/src/apps/me.ele.ts)
+存在 10 规则组 - [me.ele](/src/apps/me.ele.ts)
 
 ## 更新提示
 
@@ -70,3 +70,9 @@
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/14812552)
+
+## 全屏广告-全能超市页
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/i/16023745)

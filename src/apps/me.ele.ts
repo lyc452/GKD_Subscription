@@ -177,7 +177,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
-          matches: 'FrameLayout[id="me.ele:id/fl_render_e_shop"] + FrameLayout > FrameLayout + FrameLayout >3 View[index=7]',
+          matches:
+            'FrameLayout[id="me.ele:id/fl_render_e_shop"] + FrameLayout > FrameLayout + FrameLayout >3 View[index=7]',
           snapshotUrls: 'https://i.gkd.li/i/16023745',
         },
       ],
