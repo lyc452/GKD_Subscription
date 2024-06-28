@@ -119,7 +119,7 @@ export default defineAppConfig({
       name: '局部广告-首页底部',
       activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
       rules:
-        'LinearLayout >n FrameLayout >n ViewGroup[childCount=3] + ViewGroup[clickable=true]',
+        'LinearLayout[id="me.ele:id/floating_view"] >n ViewGroup[childCount=3] + ViewGroup[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/import/13710588',
     },
     {
