@@ -37,7 +37,8 @@ export default defineAppConfig({
             'com.handsgo.jiakao.android.practice_refactor.activity.PracticeActivity',
             'com.handsgo.jiakao.android.main.activity.MainActivity',
           ],
-          matches: '[id="com.handsgo.jiakao.android:id/adsdk__ids_ad_third_bind_area"] > * > * > [id="com.handsgo.jiakao.android:id/adsdk__ids_component_close"]',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/adsdk__ids_ad_third_bind_area"] > * > * > [id="com.handsgo.jiakao.android:id/adsdk__ids_component_close"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13848864',
             'https://i.gkd.li/import/13857697',
@@ -45,7 +46,8 @@ export default defineAppConfig({
         },
         {
           key: 2,
-          matches: '[id="com.handsgo.jiakao.android:id/topRightContainer"] > [id="com.handsgo.jiakao.android:id/adsdk__ids_component_close"][visibleToUser=true]',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/topRightContainer"] > [id="com.handsgo.jiakao.android:id/adsdk__ids_component_close"][visibleToUser=true]',
           quickFind: true,
           snapshotUrls: [
             'https://i.gkd.li/import/13855690',
@@ -86,15 +88,18 @@ export default defineAppConfig({
           key: 2,
           name: '购车广告',
           quickFind: true,
-          activityIds: 'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
-          matches: '[id="com.handsgo.jiakao.android:id/permission_bg"] + [id="com.handsgo.jiakao.android:id/close"]',
+          activityIds:
+            'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/permission_bg"] + [id="com.handsgo.jiakao.android:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/16154016',
         },
         {
           key: 3,
           quickFind: true,
           activityIds: 'com.handsgo.jiakao.android.main.activity.MainActivity',
-          matches: '[id="com.handsgo.jiakao.android:id/topCloseLayout"] > [id="com.handsgo.jiakao.android:id/close"]',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/topCloseLayout"] > [id="com.handsgo.jiakao.android:id/close"]',
           snapshotUrls: 'https://i.gkd.li/import/13855635',
         },
       ],
@@ -114,8 +119,10 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
-          matches: '[text*="好评"] - FrameLayout > [id="com.handsgo.jiakao.android:id/iv_close"]',
+          activityIds:
+            'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
+          matches:
+            '[text*="好评"] - FrameLayout > [id="com.handsgo.jiakao.android:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16216546',
         },
       ],
@@ -127,7 +134,8 @@ export default defineAppConfig({
       matchTime: 10000,
       rules: [
         {
-          activityIds: 'com.handsgo.jiakao.android.paid_vip.activity.VipHtml5Activity',
+          activityIds:
+            'com.handsgo.jiakao.android.paid_vip.activity.VipHtml5Activity',
           matches: '[text="残忍放弃"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/import/13848855',
         },
