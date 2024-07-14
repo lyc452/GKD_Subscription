@@ -122,7 +122,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '我不需要VIP',
+      name: '功能类-我不需要VIP',
       desc: '点击"残忍放弃"',
       matchTime: 10000,
       rules: [
