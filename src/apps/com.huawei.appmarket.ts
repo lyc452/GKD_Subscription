@@ -14,7 +14,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.huawei.appmarket.MainActivity',
-          matches: '[id="com.huawei.appmarket:id/clock_layout"] > [text*="跳过"]',
+          matches:
+            '[id="com.huawei.appmarket:id/clock_layout"] > [text*="跳过"]',
           snapshotUrls: 'https://i.gkd.li/i/16114723',
         },
       ],
