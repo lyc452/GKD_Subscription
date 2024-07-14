@@ -54,10 +54,12 @@ export default defineAppConfig({
           key: 2,
           name: '购车广告',
           quickFind: true,
-          activityIds: 'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
-          matches: '[id="com.handsgo.jiakao.android:id/permission_bg"] + [id="com.handsgo.jiakao.android:id/close"]',
+          activityIds:
+            'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
+          matches:
+            '[id="com.handsgo.jiakao.android:id/permission_bg"] + [id="com.handsgo.jiakao.android:id/close"]',
           snapshotUrls: 'https://i.gkd.li/i/16154016',
-        }
+        },
       ],
     },
     {
@@ -75,8 +77,10 @@ export default defineAppConfig({
       rules: [
         {
           quickFind: true,
-          activityIds: 'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
-          matches: '[text*="好评"] - FrameLayout > [id="com.handsgo.jiakao.android:id/iv_close"]',
+          activityIds:
+            'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
+          matches:
+            '[text*="好评"] - FrameLayout > [id="com.handsgo.jiakao.android:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16216546',
         },
       ],
