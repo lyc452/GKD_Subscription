@@ -50,6 +50,14 @@ export default defineAppConfig({
             '[id="com.handsgo.jiakao.android:id/adsdk__ids_cta_layout"] - * > [id="com.handsgo.jiakao.android:id/close"]',
           snapshotUrls: 'https://i.gkd.li/import/13523033',
         },
+        {
+          key: 2,
+          name: '购车广告',
+          quickFind: true,
+          activityIds: 'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
+          matches: '[id="com.handsgo.jiakao.android:id/permission_bg"] + [id="com.handsgo.jiakao.android:id/close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16154016',
+        }
       ],
     },
     {
@@ -60,6 +68,18 @@ export default defineAppConfig({
       rules:
         '[text="开启专属学习资料推送"] + [id="com.handsgo.jiakao.android:id/closeIv"]',
       snapshotUrls: 'https://i.gkd.li/import/13520296',
+    },
+    {
+      key: 4,
+      name: '评价提示',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.handsgo.jiakao.android.practice_refactor.practice_exit.PracticeExitActivity',
+          matches: '[text*="好评"] - FrameLayout > [id="com.handsgo.jiakao.android:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/16216546',
+        },
+      ],
     },
   ],
 });
