@@ -16,7 +16,7 @@
 | Edge                   | [com.microsoft.emmx](/docs/com.microsoft.emmx.md)                                                                                                                 | 1      |
 | Gmail                  | [com.google.android.gm](/docs/com.google.android.gm.md)                                                                                                           | 1      |
 | Gspace                 | [com.gspace.android](/docs/com.gspace.android.md)                                                                                                                 | 2      |
-| HMS Core               | [com.huawei.hwid](/docs/com.huawei.hwid.md)                                                                                                                       | 1      |
+| HMS Core               | [com.huawei.hwid](/docs/com.huawei.hwid.md)                                                                                                                       | 2      |
 | Instagram              | [com.instagram.android](/docs/com.instagram.android.md)                                                                                                           | 1      |
 | JavDB                  | [xxx.pornhub.fuck](/docs/xxx.pornhub.fuck.md)                                                                                                                     | 1      |
 | Keep                   | [com.gotokeep.keep](/docs/com.gotokeep.keep.md)                                                                                                                   | 5      |
@@ -145,6 +145,7 @@
 | 菜鸟                   | [com.cainiao.wireless](/docs/com.cainiao.wireless.md)                                                                                                             | 6      |
 | 彩云天气               | [com.nowcasting.activity](/docs/com.nowcasting.activity.md)                                                                                                       | 3      |
 | 测测                   | [com.xxwolo.cc5](/docs/com.xxwolo.cc5.md)                                                                                                                         | 1      |
+| 测网速UUSpeed          | [com.uusense.speed](/docs/com.uusense.speed.md)                                                                                                                   | 1      |
 | 超级课程表             | [com.xtuone.android.syllabus](/docs/com.xtuone.android.syllabus.md)                                                                                               | 3      |
 | 车来了                 | [com.ygkj.chelaile.standard](/docs/com.ygkj.chelaile.standard.md)                                                                                                 | 1      |
 | 春木漫画               | [com.galaxy.qbyd](/docs/com.galaxy.qbyd.md)                                                                                                                       | 1      |
@@ -250,14 +251,14 @@
 | 华为生活服务           | [com.huawei.lives](/docs/com.huawei.lives.md)                                                                                                                     | 1      |
 | 华为视频               | [com.huawei.himovie](/docs/com.huawei.himovie.md)                                                                                                                 | 1      |
 | 华为天气               | [com.huawei.android.totemweather](/docs/com.huawei.android.totemweather.md)                                                                                       | 3      |
-| 华为应用市场           | [com.huawei.appmarket](/docs/com.huawei.appmarket.md)                                                                                                             | 2      |
+| 华为应用市场           | [com.huawei.appmarket](/docs/com.huawei.appmarket.md)                                                                                                             | 3      |
 | 华为音乐               | [com.huawei.music](/docs/com.huawei.music.md)                                                                                                                     | 7      |
 | 华为运动健康           | [com.huawei.health](/docs/com.huawei.health.md)                                                                                                                   | 5      |
 | 华为主题               | [com.huawei.android.thememanager](/docs/com.huawei.android.thememanager.md)                                                                                       | 7      |
 | 虎扑                   | [com.hupu.games](/docs/com.hupu.games.md)                                                                                                                         | 1      |
 | 虎牙直播               | [com.duowan.kiwi](/docs/com.duowan.kiwi.md)                                                                                                                       | 5      |
 | i茅台                  | [com.moutai.mall](/docs/com.moutai.mall.md)                                                                                                                       | 2      |
-| 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                                                                                 | 4      |
+| 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                                                                                 | 6      |
 | 简单搜索               | [com.baidu.searchcraft](/docs/com.baidu.searchcraft.md)                                                                                                           | 1      |
 | 建工计算器             | [com.glodon.constructioncalculators](/docs/com.glodon.constructioncalculators.md)                                                                                 | 1      |
 | 简书                   | [com.jianshu.haruki](/docs/com.jianshu.haruki.md)                                                                                                                 | 1      |
