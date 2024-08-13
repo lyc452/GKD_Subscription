@@ -13,7 +13,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'ksbd.app.category.SplashActivity',
-          matches: '[id="com.kaoshibaodian.app:id/splashImageBackgroundView"] >3 View',
+          matches:
+            '[id="com.kaoshibaodian.app:id/splashImageBackgroundView"] >3 View',
         },
       ],
     },
@@ -23,7 +24,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'ksbd.app.home.HomeActivity',
-          matches: '[text="查看详情"] - View < FrameLayout - FrameLayout >2 ImageView',
+          matches:
+            '[text="查看详情"] - View < FrameLayout - FrameLayout >2 ImageView',
         },
       ],
     },
@@ -33,7 +35,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'ksbd.app.exercise.ExerciseAct',
-          matches: '[id="com.kaoshibaodian.app:id/ad_layout"] >6 ImageView[visibleToUser=true]',
+          matches:
+            '[id="com.kaoshibaodian.app:id/ad_layout"] >6 ImageView[visibleToUser=true]',
         },
       ],
     },
