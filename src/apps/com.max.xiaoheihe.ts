@@ -21,5 +21,17 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '通知提示',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.max.xiaoheihe.MainActivity',
+          matches: '[text*="通知"][id="com.max.xiaoheihe:id/tv_title"] <<2 ViewGroup +2 [id="com.max.xiaoheihe:id/iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/17000645',
+        },
+      ],
+    },
   ],
 });
