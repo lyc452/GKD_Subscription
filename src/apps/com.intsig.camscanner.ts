@@ -89,7 +89,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/17677829',
         },
         {
-          key: 1,
+          key: 2,
           quickFind: true,
           activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
           matches: '[id="com.intsig.camscanner:id/iv_unsubscribe_recall_close_icon"]',
