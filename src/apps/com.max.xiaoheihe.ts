@@ -28,7 +28,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.max.xiaoheihe.MainActivity',
-          matches: '[text*="通知"][id="com.max.xiaoheihe:id/tv_title"] <<2 ViewGroup +2 [id="com.max.xiaoheihe:id/iv_close"]',
+          matches:
+            '[text*="通知"][id="com.max.xiaoheihe:id/tv_title"] <<2 ViewGroup +2 [id="com.max.xiaoheihe:id/iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/17000645',
         },
       ],
