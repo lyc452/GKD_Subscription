@@ -67,7 +67,7 @@ export default defineAppConfig({
       ],
     },
     {
-      key: 1,
+      key: 6,
       name: '通知提示',
       rules: [
         {
