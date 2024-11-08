@@ -240,6 +240,18 @@ export default defineAppConfig({
       snapshotUrls: ['https://i.gkd.li/import/12707676'],
     },
     {
+      key: 13,
+      name: '局部广告-首页',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          matches: '@ImageView + RelativeLayout >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/17677997',
+        },
+      ],
+    },
+    {
       enable: false,
       key: 101, // 不属于广告，序号往后排
       name: '问题回答-自动展开',
