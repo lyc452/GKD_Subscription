@@ -5,13 +5,6 @@ export default defineAppConfig({
   name: '扫描全能王',
   groups: [
     {
-      key: 0,
-      name: '开屏vip提示',
-      desc: '缺少快照',
-      activityIds: 'com.intsig.camscanner.guide.guidevideo.GuideVideoActivity',
-      rules: '[id=`com.intsig.camscanner:id/tv_drop_cnl_close_new`]',
-    },
-    {
       key: 1,
       name: '局部广告-主页',
       activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
@@ -80,6 +73,27 @@ export default defineAppConfig({
           matches:
             'TextView[text="广告"][visibleToUser=true] < View - View <<2 View + View >3 Image[visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/15858222',
+        },
+      ],
+    },
+    {
+      key: 5,
+      enable: true,
+      name: '功能类-开通会员',
+      rules: [
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
+          matches: '[id="com.intsig.camscanner:id/aciv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/17677829',
+        },
+        {
+          key: 1,
+          quickFind: true,
+          activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
+          matches: '[id="com.intsig.camscanner:id/iv_unsubscribe_recall_close_icon"]',
+          snapshotUrls: 'https://i.gkd.li/i/17677832',
         },
       ],
     },
