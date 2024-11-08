@@ -54,5 +54,32 @@ export default defineAppConfig({
       rules: '[text="流量够用"]',
       snapshotUrls: 'https://i.gkd.li/import/13197868',
     },
+    {
+      key: 5,
+      name: '功能类-您未开启高品质音质播放',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[text*="高品质音质"] +2 FrameLayout > [id="com.tencent.qqmusic:id/h_6"]',
+          snapshotUrls: 'https://i.gkd.li/i/17678044',
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '通知提示',
+      rules: [
+        {
+          quickFind: true,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[text*="推送通知" || text*="数字提醒"] +2 [id="com.tencent.qqmusic:id/dwa"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17678045',
+            'https://i.gkd.li/i/17678097',
+          ],
+        },
+      ],
+    },
   ],
 });
