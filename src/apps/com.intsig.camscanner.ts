@@ -84,15 +84,18 @@ export default defineAppConfig({
         {
           key: 1,
           quickFind: true,
-          activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
+          activityIds:
+            'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
           matches: '[id="com.intsig.camscanner:id/aciv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/17677829',
         },
         {
           key: 2,
           quickFind: true,
-          activityIds: 'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
-          matches: '[id="com.intsig.camscanner:id/iv_unsubscribe_recall_close_icon"]',
+          activityIds:
+            'com.intsig.camscanner.mainmenu.mainactivity.MainActivity',
+          matches:
+            '[id="com.intsig.camscanner:id/iv_unsubscribe_recall_close_icon"]',
           snapshotUrls: 'https://i.gkd.li/i/17677832',
         },
       ],

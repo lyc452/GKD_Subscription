@@ -61,7 +61,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '[text*="高品质音质"] +2 FrameLayout > [id="com.tencent.qqmusic:id/h_6"]',
+          matches:
+            '[text*="高品质音质"] +2 FrameLayout > [id="com.tencent.qqmusic:id/h_6"]',
           snapshotUrls: 'https://i.gkd.li/i/17678044',
         },
       ],
@@ -73,7 +74,8 @@ export default defineAppConfig({
         {
           quickFind: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '[text*="推送通知" || text*="数字提醒"] +2 [id="com.tencent.qqmusic:id/dwa"]',
+          matches:
+            '[text*="推送通知" || text*="数字提醒"] +2 [id="com.tencent.qqmusic:id/dwa"]',
           snapshotUrls: [
             'https://i.gkd.li/i/17678045',
             'https://i.gkd.li/i/17678097',
