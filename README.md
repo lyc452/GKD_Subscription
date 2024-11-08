@@ -14,9 +14,9 @@ https://raw.githubusercontent.com/lyc452/GKD_Subscription/main/dist/gkd.json5
 https://cdn.jsdelivr.net/gh/lyc452/GKD_Subscription/dist/gkd.json5
 ```
 
-当前版本: v10
+当前版本: v11
 
-当前订阅文件已适配 647 个 APP, 共有 1422 规则组
+当前订阅文件已适配 649 个 APP, 共有 1427 规则组
 
 查看 [适配 APP 列表](./AppList.md)
 

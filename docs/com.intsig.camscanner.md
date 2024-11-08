@@ -2,10 +2,6 @@
 
 存在 5 规则组 - [com.intsig.camscanner](/src/apps/com.intsig.camscanner.ts)
 
-## 开屏vip提示
-
-默认禁用 - 缺少快照
-
 ## 局部广告-主页
 
 默认禁用
@@ -31,3 +27,10 @@
 
 - [快照-0](https://i.gkd.li/i/15847787)
 - [快照-1](https://i.gkd.li/i/15858222)
+
+## 功能类-开通会员
+
+默认禁用
+
+- [快照-0](https://i.gkd.li/i/17677829)
+- [快照-1](https://i.gkd.li/i/17677832)

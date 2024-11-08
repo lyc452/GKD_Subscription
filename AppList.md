@@ -81,6 +81,7 @@
 | MT管理器               | [bin.mt.plus](/docs/bin.mt.plus.md)                                                                                                                               | 1      |
 | MT管理器Pro            | [bin.mt.plus.canary](/docs/bin.mt.plus.canary.md)                                                                                                                 | 1      |
 | MX 播放器              | [com.mxtech.videoplayer.ad](/docs/com.mxtech.videoplayer.ad.md)                                                                                                   | 1      |
+| Maple计算器            | [com.maplesoft.companion](/docs/com.maplesoft.companion.md)                                                                                                       | 1      |
 | NGA玩家社区            | [gov.pianzong.androidnga](/docs/gov.pianzong.androidnga.md)                                                                                                       | 4      |
 | NP管理器               | [npgl.jsitcx.xlpqi](/docs/npgl.jsitcx.xlpqi.md)                                                                                                                   | 2      |
 | OPPO软件商店           | [com.heytap.market](/docs/com.heytap.market.md)                                                                                                                   | 1      |
@@ -89,7 +90,7 @@
 | OurPlay加速器          | [com.excean.splay](/docs/com.excean.splay.md)                                                                                                                     | 1      |
 | PU口袋校园             | [com.xyhui](/docs/com.xyhui.md)                                                                                                                                   | 3      |
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                                                                                       | 3      |
-| QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 4      |
+| QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 6      |
 | QQ邮箱                 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md)                                                                                                   | 3      |
 | QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 1      |
 | UC浏览器               | [com.UCMobile](/docs/com.UCMobile.md)                                                                                                                             | 4      |
@@ -257,6 +258,7 @@
 | 华为主题               | [com.huawei.android.thememanager](/docs/com.huawei.android.thememanager.md)                                                                                       | 7      |
 | 虎扑                   | [com.hupu.games](/docs/com.hupu.games.md)                                                                                                                         | 1      |
 | 虎牙直播               | [com.duowan.kiwi](/docs/com.duowan.kiwi.md)                                                                                                                       | 5      |
+| i国网                  | [com.dlxx.mam.Internal](/docs/com.dlxx.mam.Internal.md)                                                                                                           | 1      |
 | i茅台                  | [com.moutai.mall](/docs/com.moutai.mall.md)                                                                                                                       | 2      |
 | 驾考宝典               | [com.handsgo.jiakao.android](/docs/com.handsgo.jiakao.android.md)                                                                                                 | 6      |
 | 简单搜索               | [com.baidu.searchcraft](/docs/com.baidu.searchcraft.md)                                                                                                           | 1      |
@@ -614,7 +616,7 @@
 | 直播吧                 | [android.zhibo8](/docs/android.zhibo8.md)                                                                                                                         | 1      |
 | 知到                   | [com.able.wisdomtree](/docs/com.able.wisdomtree.md)                                                                                                               | 2      |
 | 支付宝                 | [com.eg.android.AlipayGphone](/docs/com.eg.android.AlipayGphone.md)                                                                                               | 7      |
-| 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 13     |
+| 知乎                   | [com.zhihu.android](/docs/com.zhihu.android.md)                                                                                                                   | 14     |
 | 智慧生活               | [com.huawei.smarthome](/docs/com.huawei.smarthome.md)                                                                                                             | 1      |
 | 智慧树                 | [com.hyww.wisdomtree](/docs/com.hyww.wisdomtree.md)                                                                                                               | 2      |
 | 智慧搜索               | [com.huawei.search](/docs/com.huawei.search.md)                                                                                                                   | 1      |
