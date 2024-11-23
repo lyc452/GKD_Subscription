@@ -18,7 +18,8 @@ export default defineAppConfig({
         {
           key: 2,
           activityIds: 'com.facebook.katana.activity.FbMainTabActivity',
-          matches: '[text*="你的推送通知已关闭"] - ViewGroup[visibleToUser=true]',
+          matches:
+            '[text*="你的推送通知已关闭"] - ViewGroup[visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/354c4f7b-cc20-4079-ac8b-b18a477dae60',
           snapshotUrls: 'https://i.gkd.li/i/17878489',
         },
