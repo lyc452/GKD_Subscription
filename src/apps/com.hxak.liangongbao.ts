@@ -25,5 +25,18 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '更新提示',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.hxak.liangongbao.login.ui.HomeActivity',
+          matches: '[text="暂不更新"]',
+          exampleUrls: 'https://e.gkd.li/60d0bef4-987e-4d6a-90c5-3024a43ca81d',
+          snapshotUrls: 'https://i.gkd.li/i/18140953',
+        },
+      ],
+    },
   ],
 });
