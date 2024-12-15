@@ -44,7 +44,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '关闭推荐',
+      name: '功能类-关闭推荐',
       desc: '关闭回答底部其他回答',
       activityIds: 'com.zhihu.android.mix.activity.ContentMixProfileActivity',
       rules: [
@@ -53,7 +53,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '分段广告-推荐页广告卡片',
+      name: '分段广告-推荐页',
       desc: '赚稿费广告卡片,盐选推荐广告,知乎学课堂,汽车广告',
       rules: [
         {
@@ -84,7 +84,7 @@ export default defineAppConfig({
     },
     {
       key: 6,
-      name: '分段广告-问题-回答列表-卡片广告',
+      name: '分段广告-回答页',
       rules: [
         {
           key: 0,
@@ -118,7 +118,7 @@ export default defineAppConfig({
     },
     {
       key: 7,
-      name: '回答底部评论顶部的任意广告推荐',
+      name: '局部广告-回答页',
       activityIds: [
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
         'com.zhihu.android.app.ui.activity.HostActivity',
@@ -132,7 +132,7 @@ export default defineAppConfig({
           key: 1,
           matches:
             'TextView[text$=`的广告`] +n TextView[text=`×`][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/import/12864109',
+          snapshotUrls: 'https://i.gkd.li/import/12864109', // 快照有误
         },
         {
           key: 2,
@@ -184,7 +184,20 @@ export default defineAppConfig({
             '@ImageView[id=null][clickable=true] -(2) ViewGroup > [text$="广告"]',
           snapshotUrls: ['https://i.gkd.li/import/12647525'],
         },
-        // 预留11~99
+        {
+          key: 11,
+          activityIds: 'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
+          matches: '[text*="的广告"] +n ViewGroup > ImageView',
+          exampleUrls: [
+            'https://e.gkd.li/64ef2385-9d97-4d49-9e8a-435978d4ba7b',
+            'https://e.gkd.li/2ce2a95c-2542-40a2-ac4f-72ba3081384f',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/18141072',
+            'https://i.gkd.li/i/18141143',
+          ],
+        },
+        // 预留12~99
         {
           preKeys: [10],
           key: 100,
@@ -197,33 +210,54 @@ export default defineAppConfig({
     },
     {
       key: 8,
-      name: '关闭首页广告',
-      activityIds: 'com.zhihu.android.app.ui.activity.AdAlphaVideoActivity',
-      rules: '[id=`com.zhihu.android:id/tv_ad_close`]',
+      name: '全屏广告-首页',
+      rules: [
+        {
+          key: 1,
+          activityIds: 'com.zhihu.android.app.ui.activity.AdAlphaVideoActivity',
+          matches: '[id=`com.zhihu.android:id/tv_ad_close`]',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          matches: '[id="com.zhihu.android:id/marketing_close"]',
+          exampleUrls: 'https://e.gkd.li/7efba656-622f-4e2a-9495-e7c5eb8fdca1',
+          snapshotUrls: 'https://i.gkd.li/i/18141043',
+        },
+      ],
     },
     {
       key: 9,
-      name: '推荐页-顶部广告',
+      name: '局部广告-推荐页',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         '[id="com.zhihu.android:id/tv_ad_tag"] + [id="com.zhihu.android:id/img_close_focus"]', // 1686911063850
       ],
     },
     {
-      enable: false,
       key: 10,
-      name: '推送通知弹窗',
-      desc: '推送通知弹窗-点击x按钮',
-      activityIds: 'com.zhihu.android.app.ui.dialog.d',
+      name: '通知提示',
       rules: [
-        'TextView[id="com.zhihu.android:id/guide_title"] - ImageView[id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
+        {
+          key: 1,
+          activityIds: 'com.zhihu.android.app.ui.dialog.d',
+          matches: 'TextView[id="com.zhihu.android:id/guide_title"] - ImageView[id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/import/12647583',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.zhihu.android.app.SearchActivity',
+          matches: '[text*="推送"] - [id="com.zhihu.android:id/btn_close"]',
+          exampleUrls: 'https://e.gkd.li/77eab88a-4e4e-4cc4-ba54-b8ba556307bf',
+          snapshotUrls: 'https://i.gkd.li/i/18141109',
+        },
       ],
-      snapshotUrls: ['https://i.gkd.li/import/12647583'],
     },
     {
-      enable: false,
       key: 11,
-      name: '会员页面-月卡红包',
+      name: '全屏广告-月卡红包',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         'ImageView[id="com.zhihu.android:id/floating_img"] + ImageView[id="com.zhihu.android:id/floating_close_btn"][clickable=true]',
@@ -232,7 +266,7 @@ export default defineAppConfig({
     },
     {
       key: 12,
-      name: '会员页面-广告弹窗',
+      name: '全屏广告-会员页面',
       activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
       rules: [
         '[id="com.zhihu.android:id/image"] < RelativeLayout + [id="com.zhihu.android:id/dismiss"]',
@@ -244,17 +278,26 @@ export default defineAppConfig({
       name: '局部广告-首页',
       rules: [
         {
+          key: 1,
           quickFind: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: '@ImageView + RelativeLayout >2 [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/17677997',
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
+          matches: '[id="com.zhihu.android:id/img_close_focus"]',
+          exampleUrls: 'https://e.gkd.li/45444dd5-b724-4af7-adee-84679c164e40',
+          snapshotUrls: 'https://i.gkd.li/i/18140964',
         },
       ],
     },
     {
       enable: false,
       key: 101, // 不属于广告，序号往后排
-      name: '问题回答-自动展开',
+      name: '功能类-自动展开',
       activityIds:
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
       rules: [
