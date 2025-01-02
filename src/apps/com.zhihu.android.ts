@@ -186,7 +186,8 @@ export default defineAppConfig({
         },
         {
           key: 11,
-          activityIds: 'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
+          activityIds:
+            'com.zhihu.android.feature.short_container_feature.ui.ShortContainerHostActivity',
           matches: '[text*="的广告"] +n ViewGroup > ImageView',
           exampleUrls: [
             'https://e.gkd.li/64ef2385-9d97-4d49-9e8a-435978d4ba7b',
@@ -242,7 +243,8 @@ export default defineAppConfig({
         {
           key: 1,
           activityIds: 'com.zhihu.android.app.ui.dialog.d',
-          matches: 'TextView[id="com.zhihu.android:id/guide_title"] - ImageView[id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
+          matches:
+            'TextView[id="com.zhihu.android:id/guide_title"] - ImageView[id="com.zhihu.android:id/guide_image_exit"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/import/12647583',
         },
         {
