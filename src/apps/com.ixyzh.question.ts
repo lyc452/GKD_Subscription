@@ -19,7 +19,8 @@ export default defineAppConfig({
         },
         {
           activityIds: 'com.ixyzh.question.ui.SplashActivity',
-          matches: '[id="com.ixyzh.question:id/action_bar_root"] > [id="android:id/content"] >2 [id="com.ixyzh.question:id/splash_container"] >3 View[id=null]',
+          matches:
+            '[id="com.ixyzh.question:id/action_bar_root"] > [id="android:id/content"] >2 [id="com.ixyzh.question:id/splash_container"] >3 View[id=null]',
         },
       ],
     },
@@ -63,8 +64,10 @@ export default defineAppConfig({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: '[id="com.ixyzh.question:id/ll_ad_close"] > [text="关闭广告"]',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches:
+            '[id="com.ixyzh.question:id/ll_ad_close"] > [text="关闭广告"]',
         },
       ],
     },
