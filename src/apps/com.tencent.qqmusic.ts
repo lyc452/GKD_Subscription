@@ -27,9 +27,10 @@ export default defineAppConfig({
           ],
         },
         {
-          key :3,
+          key: 3,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '[id="com.tencent.qqmusic:id/hs"] > [id="com.tencent.qqmusic:id/bdc"] >6 ImageView[visibleToUser=true]',
+          matches:
+            '[id="com.tencent.qqmusic:id/hs"] > [id="com.tencent.qqmusic:id/bdc"] >6 ImageView[visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/04acb86a-b611-4bf6-a2fe-abc5e27b4156',
           snapshotUrls: 'https://i.gkd.li/i/18422785',
         },
@@ -96,7 +97,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: '[id="com.tencent.qqmusic:id/f61"] >4 ImageView +2 ImageView',
+          matches:
+            '[id="com.tencent.qqmusic:id/f61"] >4 ImageView +2 ImageView',
           exampleUrls: 'https://e.gkd.li/7cdd60af-2a05-4f4b-bb44-16bd16854678',
           snapshotUrls: 'https://i.gkd.li/i/18422781',
         },
@@ -108,7 +110,8 @@ export default defineAppConfig({
       rules: [
         {
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
-          matches: 'FrameLayout[desc="${insertPos}_${adList[0].getAdId()}"] >6 TextView[visibleToUser=true]',
+          matches:
+            'FrameLayout[desc="${insertPos}_${adList[0].getAdId()}"] >6 TextView[visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/629663b3-3ab3-48d6-8769-16d864dd7889',
           snapshotUrls: 'https://i.gkd.li/i/18422791',
         },

@@ -19,7 +19,8 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches: '[id="com.greenpoint.android.mc10086.activity:id/ad_image"] < RelativeLayout + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
+          matches:
+            '[id="com.greenpoint.android.mc10086.activity:id/ad_image"] < RelativeLayout + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
           exampleUrls: 'https://e.gkd.li/6e3dcd63-43a8-4ae4-bbf6-72977c3d2f43',
           snapshotUrls: 'https://i.gkd.li/import/12662361',
         },
@@ -38,13 +39,15 @@ export default defineAppConfig({
       rules: [
         {
           key: 1,
-          matches: '[id="com.greenpoint.android.mc10086.activity:id/drag_img"] + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
+          matches:
+            '[id="com.greenpoint.android.mc10086.activity:id/drag_img"] + [id="com.greenpoint.android.mc10086.activity:id/close_btn"]',
           snapshotUrls: 'https://i.gkd.li/import/12662265',
         },
         {
           key: 2,
           fastQuery: true,
-          matches: '[id="com.greenpoint.android.mc10086.activity:id/up_floor"] + [id="com.greenpoint.android.mc10086.activity:id/iv_close"]',
+          matches:
+            '[id="com.greenpoint.android.mc10086.activity:id/up_floor"] + [id="com.greenpoint.android.mc10086.activity:id/iv_close"]',
           exampleUrls: 'https://e.gkd.li/117b5b04-205a-4ef2-ba72-0a5efd45bb85',
           snapshotUrls: 'https://i.gkd.li/i/18422583',
         },
