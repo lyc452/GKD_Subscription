@@ -10,7 +10,7 @@ export default defineAppConfig({
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: [
         {
-          key: 2,
+          key: 1,
           matches: '[text="广告"] +n [desc="关闭"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13206534', //歌单页
@@ -18,13 +18,20 @@ export default defineAppConfig({
           ],
         },
         {
-          key: 3,
+          key: 2,
           matches:
             '@ImageView - ImageView - RelativeLayout >n [text="听歌入会赢绿钻"||text="摇动点击广告跳转"]',
           snapshotUrls: [
             'https://i.gkd.li/import/13206982',
             'https://i.gkd.li/import/13218134',
           ],
+        },
+        {
+          key :3,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[id="com.tencent.qqmusic:id/hs"] > [id="com.tencent.qqmusic:id/bdc"] >6 ImageView[visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/04acb86a-b611-4bf6-a2fe-abc5e27b4156',
+          snapshotUrls: 'https://i.gkd.li/i/18422785',
         },
       ],
     },
@@ -80,6 +87,30 @@ export default defineAppConfig({
             'https://i.gkd.li/i/17678045',
             'https://i.gkd.li/i/17678097',
           ],
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '功能类-开启空间音频',
+      rules: [
+        {
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[id="com.tencent.qqmusic:id/f61"] >4 ImageView +2 ImageView',
+          exampleUrls: 'https://e.gkd.li/7cdd60af-2a05-4f4b-bb44-16bd16854678',
+          snapshotUrls: 'https://i.gkd.li/i/18422781',
+        },
+      ],
+    },
+    {
+      key: 8,
+      name: '功能类-首页VIP甄选馆横幅',
+      rules: [
+        {
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: 'FrameLayout[desc="${insertPos}_${adList[0].getAdId()}"] >6 TextView[visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/629663b3-3ab3-48d6-8769-16d864dd7889',
+          snapshotUrls: 'https://i.gkd.li/i/18422791',
         },
       ],
     },
