@@ -91,7 +91,7 @@
 | OurPlay加速器          | [com.excean.splay](/docs/com.excean.splay.md)                                                                                                                     | 1      |
 | PU口袋校园             | [com.xyhui](/docs/com.xyhui.md)                                                                                                                                   | 3      |
 | QQ浏览器               | [com.tencent.mtt](/docs/com.tencent.mtt.md)                                                                                                                       | 3      |
-| QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 6      |
+| QQ音乐                 | [com.tencent.qqmusic](/docs/com.tencent.qqmusic.md)                                                                                                               | 8      |
 | QQ邮箱                 | [com.tencent.androidqqmail](/docs/com.tencent.androidqqmail.md)                                                                                                   | 3      |
 | QQ阅读                 | [com.qq.reader](/docs/com.qq.reader.md)                                                                                                                           | 1      |
 | UC浏览器               | [com.UCMobile](/docs/com.UCMobile.md)                                                                                                                             | 4      |
@@ -508,7 +508,7 @@
 | 湘潭出行               | [com.whpe.qrcode.hunan_xiangtan](/docs/com.whpe.qrcode.hunan_xiangtan.md)                                                                                         | 1      |
 | 闲鱼                   | [com.taobao.idlefish](/docs/com.taobao.idlefish.md)                                                                                                               | 3      |
 | 小爱音箱               | [com.xiaomi.mico](/docs/com.xiaomi.mico.md)                                                                                                                       | 1      |
-| 小包搜题               | [com.ixyzh.question](/docs/com.ixyzh.question.md)                                                                                                                 | 2      |
+| 小包搜题               | [com.ixyzh.question](/docs/com.ixyzh.question.md)                                                                                                                 | 4      |
 | 小步点                 | [run.xbud.android](/docs/run.xbud.android.md)                                                                                                                     | 1      |
 | 小蚕霸王餐             | [com.realtech.xiaocan](/docs/com.realtech.xiaocan.md)                                                                                                             | 2      |
 | 小恩爱                 | [com.xiaoenai.app](/docs/com.xiaoenai.app.md)                                                                                                                     | 3      |
@@ -631,7 +631,7 @@
 | 智校乐                 | [com.hnjiajie.zhixiaole](/docs/com.hnjiajie.zhixiaole.md)                                                                                                         | 1      |
 | 智讯社区               | [bbs.zhixun.com](/docs/bbs.zhixun.com.md)                                                                                                                         | 1      |
 | 志愿汇                 | [com.zzw.october](/docs/com.zzw.october.md)                                                                                                                       | 2      |
-| 中国电信               | [com.ct.client](/docs/com.ct.client.md)                                                                                                                           | 5      |
+| 中国电信               | [com.ct.client](/docs/com.ct.client.md)                                                                                                                           | 4      |
 | 中国工商银行           | [com.icbc](/docs/com.icbc.md)                                                                                                                                     | 2      |
 | 中国广电               | [com.ai.obc.cbn.app](/docs/com.ai.obc.cbn.app.md)                                                                                                                 | 1      |
 | 中国建设银行           | [com.chinamworld.main](/docs/com.chinamworld.main.md)                                                                                                             | 1      |
