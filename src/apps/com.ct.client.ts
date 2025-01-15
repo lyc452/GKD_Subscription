@@ -5,18 +5,18 @@ export default defineAppConfig({
   name: '中国电信',
   deprecatedKeys: [0],
   groups: [
-    {
-      key: 1,
-      name: '用户引导',
-      enable: false,
-      quickFind: true,
-      activityIds: 'com.ct.client.activity.UserGuideActivity',
-      rules: '[id="com.ct.client:id/tvSkip"]',
-      snapshotUrls: ['https://i.gkd.li/import/12508971'],
-    },
+    // {
+    //   key: 1,
+    //   name: '用户引导',
+    //   enable: false,
+    //   quickFind: true,
+    //   activityIds: 'com.ct.client.activity.UserGuideActivity',
+    //   rules: '[id="com.ct.client:id/tvSkip"]',
+    //   snapshotUrls: ['https://i.gkd.li/import/12508971'],
+    // },
     {
       key: 2,
-      name: '更新弹窗',
+      name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
       quickFind: true,
@@ -29,7 +29,7 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '浮窗广告',
+      name: '局部广告',
       desc: '会出现在首页、查询办理页面',
       quickFind: true,
       activityIds: [
@@ -52,7 +52,7 @@ export default defineAppConfig({
     },
     {
       key: 4,
-      name: '业务办理-弹窗广告',
+      name: '全屏广告',
       // quickFind: true, 实机测试使用无法跳过
       activityIds: [
         'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
@@ -62,8 +62,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '消息-开启消息通知',
-      desc: '自动点击关闭',
+      name: '通知提示',
       // quickFind: true, 实机测试使用无法跳过
       activityIds: ['com.ct.client.activity.MainActivity'],
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',
