@@ -67,6 +67,7 @@ export default defineAppConfig({
       name: '功能类-您未开启高品质音质播放',
       rules: [
         {
+          key: 1,
           quickFind: true,
           activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
           matches:
@@ -74,6 +75,7 @@ export default defineAppConfig({
           snapshotUrls: 'https://i.gkd.li/i/17678044',
         },
         {
+          key: 2,
           activityIds:
             'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
           matches:
