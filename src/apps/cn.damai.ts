@@ -5,6 +5,7 @@ export default defineAppConfig({
   name: '大麦',
   groups: [
     {
+      //无法触发
       key: 0,
       name: '开屏广告',
       matchTime: 10000,
