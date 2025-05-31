@@ -64,7 +64,7 @@ export default defineAppConfig({
     },
     {
       key: 5,
-      name: '功能类-您未开启高品质音质播放',
+      name: '功能类-高品质音质',
       rules: [
         {
           key: 1,
@@ -74,15 +74,16 @@ export default defineAppConfig({
             '[text*="高品质音质"] +2 FrameLayout > [id="com.tencent.qqmusic:id/h_6"]',
           snapshotUrls: 'https://i.gkd.li/i/17678044',
         },
-        {
-          key: 2,
-          activityIds:
-            'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
-          matches:
-            '[id="com.tencent.qqmusic:id/fet"] >4 ImageView[width=height][width<150]',
-          exampleUrls: 'https://e.gkd.li/a26966c1-da4c-4e31-a139-cb655c657072',
-          snapshotUrls: 'https://i.gkd.li/i/20530589',
-        },
+        // {
+        //   key: 2,
+        //   activityIds:
+        //     'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
+        //   matches:
+        //     '[id="com.tencent.qqmusic:id/fet"] >4 ImageView[width=height][width<150]',
+        //   未知的语法错误
+        //   exampleUrls: 'https://e.gkd.li/a26966c1-da4c-4e31-a139-cb655c657072',
+        //   snapshotUrls: 'https://i.gkd.li/i/20530589',
+        // },
       ],
     },
     {
