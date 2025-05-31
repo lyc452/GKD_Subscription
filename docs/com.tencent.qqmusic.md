@@ -1,6 +1,6 @@
 # QQ音乐
 
-存在 8 规则组 - [com.tencent.qqmusic](/src/apps/com.tencent.qqmusic.ts)
+存在 9 规则组 - [com.tencent.qqmusic](/src/apps/com.tencent.qqmusic.ts)
 
 ## 局部广告
 
@@ -32,7 +32,7 @@
 
 - [快照-0](https://i.gkd.li/import/13197868)
 
-## 功能类-您未开启高品质音质播放
+## 功能类-高品质音质
 
 默认禁用
 
@@ -60,3 +60,11 @@
 - [示例-0](https://e.gkd.li/629663b3-3ab3-48d6-8769-16d864dd7889)
 
 - [快照-0](https://i.gkd.li/i/18422791)
+
+## 局部广告-Dolby Atoms
+
+默认禁用
+
+- [示例-0](https://e.gkd.li/28be9fa3-d6bb-4622-8146-e64ddcc31ecc)
+
+- [快照-0](https://i.gkd.li/i/20530574)
