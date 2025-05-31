@@ -73,6 +73,14 @@ export default defineAppConfig({
             '[text*="高品质音质"] +2 FrameLayout > [id="com.tencent.qqmusic:id/h_6"]',
           snapshotUrls: 'https://i.gkd.li/i/17678044',
         },
+        {
+          activityIds:
+            'com.tencent.qqmusic.business.playernew.view.NewPlayerActivity',
+          matches:
+            '[id="com.tencent.qqmusic:id/fet"] >4 ImageView[width=height][width<150]',
+          exampleUrls: 'https://e.gkd.li/a26966c1-da4c-4e31-a139-cb655c657072',
+          snapshotUrls: 'https://i.gkd.li/i/20530589',
+        },
       ],
     },
     {
@@ -114,6 +122,19 @@ export default defineAppConfig({
             'FrameLayout[desc="${insertPos}_${adList[0].getAdId()}"] >6 TextView[visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/629663b3-3ab3-48d6-8769-16d864dd7889',
           snapshotUrls: 'https://i.gkd.li/i/18422791',
+        },
+      ],
+    },
+    {
+      key: 9,
+      name: '局部广告-Dolby Atoms',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
+          matches: '[text="切换音质"] + * > [id="com.tencent.qqmusic:id/hvm"]',
+          exampleUrls: 'https://e.gkd.li/28be9fa3-d6bb-4622-8146-e64ddcc31ecc',
+          snapshotUrls: 'https://i.gkd.li/i/20530574',
         },
       ],
     },
